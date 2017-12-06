@@ -2,14 +2,13 @@ The Resume Website for John William Davis/Software Developer
 
 I am learning a lot through the GitHub tutorials, and I am going to chart my progress here.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This will be a good place to blog and learn, and figure out things as I go. GitHub as well as web developing. I realize that this is a basic themed gui type of choice for me to make, using Jekyll, but I can concentrate on other things for now and update with more HTML and other tools later.
 
 I will put up some images and write something of a blog to talk about my working life. 
 
 A little bit each day . . . 
 
 ```markdown
-Syntax highlighted code block
 #Hello World! My name is papadavis47!
 This is one of my first projects on Github.com.
 ## Header 2
