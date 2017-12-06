@@ -1,12 +1,12 @@
-## Welcome to GitHub Pages
+The Resume Website for John William Davis/Software Developer
 
-You can use the [editor on GitHub](https://github.com/papadavis47/papadavis47.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+I am learning a lot through the GitHub tutorials, and I am going to chart my progress here.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+I will put up some images and write something of a blog to talk about my working life. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+A little bit each day . . . 
 
 ```markdown
 Syntax highlighted code block
