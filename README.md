@@ -1,4 +1,4 @@
-Portfolio Website for John William Davis/Software Developer
+Portfolio Website for John William Davis/Software and Web Developer
 
 I am learning a lot through the GitHub tutorials, and I am going to chart my progress here. One day at a time, the journey to learn software programming and changing direction in my professional life is good. I am teaching myself a craft and embarking on a journey of endless learning.
 
@@ -11,8 +11,12 @@ A little bit each day . . .
 About me:
 
 This is one of my first projects on Github.com.
+
 I am a father.
+
 I am a husband.
+**I am going to test this and see if it comes out bold*
+_I am going to test this and see if it comes out as ITALIC_
 
 
 **Bold** and _Italic_ and `Code` text
@@ -22,10 +26,4 @@ I am a husband.
 
 I am still figuring how how all of this works. We shall see.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/papadavis47/papadavis47.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
