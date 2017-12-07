@@ -1,4 +1,4 @@
-<h1>Portfolio Website for John William Davis</h1>
+<h2>Portfolio Website for John William Davis</h2>
 <h2>Web Developer/Software Developer</h2>
 
 I am learning a lot through the GitHub tutorials, and I am going to chart my progress here. One day at a time, the journey to learn software programming and changing direction in my professional life is good. I am teaching myself a craft and embarking on a journey of endless learning.
@@ -24,7 +24,7 @@ _I am going to test this and see if it comes out as ITALIC_
 
 `Code` text
 
-[Link](url) and ![Image](src)
+[http:](url) and ![Image](src)
 ```
 
 I am still figuring how how all of this works. We shall see.
