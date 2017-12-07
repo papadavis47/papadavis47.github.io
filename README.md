@@ -17,14 +17,15 @@ I am a father.
 
 I am a husband.
 
-**I am going to test this and see if it comes out bold*
+**I am going to test this and see if it comes out bold**
+
 
 _I am going to test this and see if it comes out as ITALIC_
 
 
 `Code` text
 
-[www.linkedin.com/in/john-william-davis] and ![Image](src)
+[https://www.linkedin.com/in/john-william-davis] and ![Image](src)
 
 
 I am still figuring how how all of this works. We shall see.
