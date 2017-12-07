@@ -1,25 +1,28 @@
-Portfolio Website for John William Davis/Software and Web Developer
+<h1>Portfolio Website for John William Davis</h1>
+<h2>Web Developer/Software Developer</h2>
 
 I am learning a lot through the GitHub tutorials, and I am going to chart my progress here. One day at a time, the journey to learn software programming and changing direction in my professional life is good. I am teaching myself a craft and embarking on a journey of endless learning.
 
-This will be a good place to blog and to learn - figure out things as I go. Learn GitHub as well as web developing, app and program development as well. I realize that this is a basic themed gui type of choice for me to make, using Jekyll, but I can concentrate on other things for now and update with more HTML and other tools later.
+This will be a good place to blog and to learn - figure out things as I go. Learn GitHub as well as web developing, app and program development. I realize that this is a basic themed gui type of choice for me to make, using Jekyll, but I can concentrate on other things for now and update with more HTML and other tools later.
 
-I will put up some images and write a little each day about my working life, and the process of going from a typical end user to a software programmer. I want to capture my creativity in my technical work, also. That is an important balance for me.
+I will put up some images and write a little each day about my working life, and the process of going from a typical end user to a programmer. I want to capture my creativity in my technical work. That is an important balance for me.
 
 A little bit each day . . . 
 
-About me:
+<h2>About me:</h2>
 
 This is one of my first projects on Github.com.
 
 I am a father.
 
 I am a husband.
+
 **I am going to test this and see if it comes out bold*
+
 _I am going to test this and see if it comes out as ITALIC_
 
 
-**Bold** and _Italic_ and `Code` text
+`Code` text
 
 [Link](url) and ![Image](src)
 ```
