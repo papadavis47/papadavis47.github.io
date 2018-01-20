@@ -1,5 +1,5 @@
-<h2>Portfolio Website for John William Davis</h2>
-<h2>Web Developer/Software Developer</h2>
+## Portfolio Website for John William Davis
+## Web Developer/Software Developer
 
 I am learning a lot through the GitHub tutorials. This is a place for me to chart my progress. One day at a time, a little bit each day, I am on a quest to learn software development and web development. I am changing direction in my professional life. I am teaching myself a craft and embarking on a journey of endless learning.
 
@@ -9,7 +9,7 @@ I will put up some images and write a little each day about my working life, and
 
 A little bit each day . . . 
 
-<h2>About me:</h2>
+## About me:
 
 This is one of my first projects on Github.com.
 
@@ -22,9 +22,7 @@ I am a husband.
 
 _I am going to test this and see if it comes out as ITALIC_
 
-<https://www.linkedin.com/in/john-william-davis> and ![Image](src)
+<https://www.linkedin.com/in/john-william-davis>
 
-
-I am still figuring how how all of this works. We shall see.
 
 
