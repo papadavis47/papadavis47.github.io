@@ -1,4 +1,4 @@
-## Portfolio Website for John William Davis
+# John William Davis
 ## Web Developer | Software Developer
 
 I am learning a lot through the GitHub tutorials. This is a place for me to chart my progress. One day at a time, a little bit each day, I am on a quest to learn software development and web development. I am changing direction in my professional life. I am teaching myself a craft and embarking on a journey of endless learning.
