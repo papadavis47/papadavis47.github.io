@@ -1,6 +1,6 @@
 # main text of home
 name: John William Davis
-bio: A Husband, father and coder . . .
+bio: A Husband, father and coder.
 
 # twitter summary info
 description: A blog about family and learning
@@ -8,7 +8,7 @@ description: A blog about family and learning
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/with_the_kids.jpg
+picture: assets/images/with_the_fam.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -34,15 +34,15 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: https://www.facebook.com/streetphotog
-twitter: https://twitter.com/nicaygringo
+facebook: streetphotog
+twitter: nicaygringo
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: https://github.com/papadavis47
+github: papadavis47
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -56,16 +56,16 @@ email: jwdavisdeveloper@gmail.com
 authors:
     johndoe:
         name: John William Davis
-        bio: A Husband, father and coder . . .
+        bio: A Husband, father and coder.
         external-image: false
-        picture: assets/images/with_the_kids.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+        picture: assets/images/with_the_fam.jpg
+        twitter: nicaygringo
+    #jamesfoster:
+    #    name: James Foster
+    #    bio: A Man who develops software with coffee
+    #    external-image: false
+    #    picture: assets/images/james.jpg
+    #    twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
