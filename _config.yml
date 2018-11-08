@@ -29,9 +29,9 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+#disqus:
+ # shortname: mydisqus # enter this from your disqus account
+  #categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 facebook: streetphotog
@@ -45,16 +45,16 @@ twitter: nicaygringo
 github: papadavis47
 # gitlab: mygitlab
 # lastfm: mylastfm
-# stackoverflow: 7044681/mystackoverflow
+stackoverflow: 9111781/jwdavis
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: jwdavisdeveloper@gmail.com
 
 authors:
-    John William Davis
+    jwd
         name: John William Davis
         bio: A Husband, father and coder.
         external-image: false
@@ -77,7 +77,7 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+# projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
