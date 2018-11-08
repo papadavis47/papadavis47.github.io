@@ -9,7 +9,7 @@ tag:
 - elements
 star: true
 category: blog
-author: John William Davis
+author: jwdavis
 description: Very First Blog Post
 ---
 
