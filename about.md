@@ -22,7 +22,7 @@ layout: page
 <h2>Projects</h2>
 
 <ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
+	<li><a href="https://github.com/papadavis47/my_sandbox">My Sandbox</a></li>
+	<li><a href="https://github.com/papadavis47/Learning-New-Computer">Learning New Computer</a></li>
+	<li><a href="https://github.com/papadavis47/nano_files">Nano Files</a></li>
 </ul>
