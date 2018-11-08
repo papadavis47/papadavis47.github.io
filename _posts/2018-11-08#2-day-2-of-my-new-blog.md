@@ -1,7 +1,7 @@
 ---
 title: Day 2 of My New Blog
 layout: post
-date: 2018-11-08 01:49
+date: 2018-11-08 12:49
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
@@ -10,8 +10,9 @@ tag:
 star: true
 category: blog
 author: jwdavis
-description: Very First Blog Post
+description: 2nd Blog Post
 ---
+
 # Second Day of Learning This New blog
 
 ## Continuing to work with Atom. Seeing how to make posts and checking to see if it updates the way that I think it will.
