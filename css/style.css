@@ -1,3 +1,50 @@
 body {
-    color: blue;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 3em; /* Trying to use em units from now on - base is 16px for 1em */
+    font-weight: bold;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+header {
+    background-color: #2d3436;
+    padding-top: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------- Navigation ------------------------------------ */
+
+
+.nav-link {
+    text-decoration: none;
+    margin: 5px;
+    font-size: 1.25em;
+    color: white;
+    /* background-color: dodgerblue; */
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.nav-link:hover {
+    background-color: #2d3436;
+}
+
+.nav-bar {
+    background-color: black;
+    text-align: center;
 }
