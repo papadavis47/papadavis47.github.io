@@ -25,6 +25,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+main {
+    text-align: center;
+    background-color: black;
+}
 /* ----------------------------- Navigation ------------------------------------ */
 
 
@@ -47,4 +51,12 @@ h2 {
 .nav-bar {
     background-color: black;
     text-align: center;
+}
+
+/* -------------------------------- Images ------------------------------------------------ */
+
+#binary {
+    width: 100%;
+    margin: 0 auto;
+
 }
