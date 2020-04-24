@@ -16,7 +16,7 @@ header {
     padding-top: 2em;
 }
 
-h2 {
+#header-sub {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
@@ -59,4 +59,71 @@ main {
     width: 100%;
     margin: 0 auto;
 
+}
+
+/* ---------------------------------- About -------------------------------------------------- */
+
+#about {
+    background-color: #2d3436;
+    font-size: 1.5rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#about-container {
+    background-color: black;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
+}
+
+.about-sub {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+#about-container p {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#about-container ul {
+    text-align: center;
+}
+
+#about-container li {
+    padding-top: 12px;
+}
+
+#email {
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* -------------------------------- Projects ------------------------------------------- */
+
+#projects {
+    background-color: #2d3436;
+    padding: 1em;
+}
+
+#projects-container {
+    background-color: black;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
+
+}
+
+#projects-container img {
+    width: 50%;
+}
+
+.project {
+    text-align: center;
 }

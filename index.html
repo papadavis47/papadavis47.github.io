@@ -14,21 +14,51 @@
   <body>
     <header>
       <h1>John William Davis</h1>
-      <h2>Full-Stack-Developer</h2>
+      <h2 id="header-sub">Full-Stack-Developer</h2>
       <nav class="nav-bar">
-        <a href="#" class="nav-link">About</a>
+        <a href="#about" class="nav-link">About</a>
         <a href="assets/ResumeJWDavis.pdf" class="nav-link" download>Resume</a>
-        <a href="#" class="nav-link">Projects</a>
+        <a href="#projects" class="nav-link">Projects</a>
         <a href="#" class="nav-link">Education</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#email" class="nav-link">Contact</a>
       </nav>
     </header>
     <main>
-        <img id="binary" src="assets/binary.jpg" alt="Binary Numbers on Screen">
-
+      <img id="binary" src="assets/binary.jpg" alt="Binary Numbers on Screen" />
     </main>
-    <div id="work-examples">
-
+    <div id="about">
+      <div id="about-container">
+        <h2 class="about-sub">About Me</h2>
+        <p>
+          "I am a Seattle based full stack developer with experience in Python,
+          JavaScript, React - as well as Express and Flask. I love the focus
+          required of programming. More than anything, I enjoy learning and
+          growing."
+        </p>
+        <br />
+        <h2 class="about-sub">Other Skills</h2>
+        <ul>
+          <li>Node.js</li>
+          <li>Sequelize</li>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+          <li>SQLAlchemy</li>
+        </ul>
+        <p id="email">Email: jwdavisdeveloper@gmail.com</p>
+      </div>
+    </div>
+    <div id="projects">
+      <div id="projects-container">
+        <div class="project" id="papa">
+          <img src="assets/ScreenshotPapa.png" alt="Image for PAPA app" />
+        </div>
+        <div class="project" id="coder-coach">
+          <img src="assets/ScreenshotCoderCoach.png" alt="" />
+        </div>
+        <div class="project" id="math-game">
+          <img src="assets/ScreenshotLindasMathGame.png" alt="" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
