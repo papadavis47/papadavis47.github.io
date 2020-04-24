@@ -183,13 +183,13 @@ main {
 /* ------------------------------------ Icons --------------------------------------------- */
 
 #icon-links {
-    background-color: black;
+    background-color: #2d3436;
     padding: 1em;
     text-align: center;
 }
 
 #icon-links img {
-    width: 5%;
+    width: 10%;
     padding: 5px;
     padding-left: 15px;
 }
