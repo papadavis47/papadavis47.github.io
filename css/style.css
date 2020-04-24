@@ -101,6 +101,13 @@ main {
 #email {
     padding-top: 30px;
     text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+    margin-top: 1em;
+}
+
+#email:hover {
+    background-color: #2d3436;
 }
 
 /* -------------------------------- Projects ------------------------------------------- */
@@ -126,4 +133,19 @@ main {
 
 .project {
     text-align: center;
+    margin: 2em 0;
+
+}
+
+#projects-container h2 {
+    text-align: center;
+}
+
+#projects-container p {
+    font-size: 1.25em;
+    padding-bottom: 1em;
+}
+
+#projects h2 {
+    font-size: 1.25em;
 }
