@@ -112,6 +112,11 @@ main {
 
 /* -------------------------------- Projects ------------------------------------------- */
 
+#click-direction {
+    font-style: italic;
+    font-weight: bold;
+}
+
 #projects {
     background-color: #2d3436;
     padding: 1em;
