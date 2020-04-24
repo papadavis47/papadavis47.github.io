@@ -178,6 +178,11 @@ main {
 
 .edu {
     margin: 1rem 3rem;
+    font-size: 1.25rem;
+}
+
+#title-GA {
+    font-weight: bold;
 }
 
 /* ------------------------------------ Icons --------------------------------------------- */
