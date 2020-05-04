@@ -64,6 +64,7 @@ main {
     margin: 0 auto;
     margin-bottom: 4em;
     margin-top: 1.5em;
+    border: solid 2px #0984e3;
 
 }
 
@@ -77,6 +78,7 @@ main {
 }
 
 #about-container {
+    border: solid 2px #0984e3;
     background-color: #182C61;
     width: 60%;
     margin: 0 auto;
@@ -136,7 +138,7 @@ main {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 2em;
-
+    border: solid 2px #0984e3;
 }
 
 #projects-container img {
@@ -151,11 +153,15 @@ main {
 
 #projects-container h2 {
     text-align: center;
+    font-size: 3em;
+    font-weight: 700;
 }
 
 #projects-container p {
     font-size: 1rem;
     padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
 }
 
 #projects h2 {
@@ -176,6 +182,7 @@ main {
     margin-top: 1em;
     margin-bottom: 1em;
     padding: 2em;
+    border: solid 2px #0984e3;
 }
 
 #education-container p {
@@ -210,3 +217,6 @@ main {
     padding: 5px;
     padding-left: 15px;
 }
+
+
+/* ------------------------------Media Queries------------------------------- */
