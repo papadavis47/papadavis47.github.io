@@ -33,6 +33,10 @@ main {
     text-align: center;
     background-color: #182C61;
 }
+
+p {
+    line-height: 1.5;
+}
 /* ----------------------------- Navigation ------------------------------------ */
 
 
@@ -47,9 +51,6 @@ main {
 
 }
 
-.nav-link:hover {
-    background-color: #2d3436;
-}
 
 .nav-bar {
     background-color: #182C61;
@@ -67,14 +68,34 @@ main {
 
 }
 
+/* -----------------------------------Hover Effects --------------------------------------------- */
+
 #binary:hover {
     border: solid 4px whitesmoke;
 }
+
+.nav-link:hover {
+    background-color: #2d3436;
+}
+
+#about-container:hover {
+    border: solid 4px whitesmoke;
+}
+
+#projects-container:hover {
+    border: solid 4px whitesmoke
+}
+#education-container:hover {
+    border: solid 4px whitesmoke
+}
+
+
+
 /* ---------------------------------- About -------------------------------------------------- */
 
 #about {
     background-color: #2d3436;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -156,7 +177,7 @@ main {
 
 #projects-container h2 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -168,7 +189,7 @@ main {
 }
 
 #projects h2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .project-name {
@@ -202,8 +223,9 @@ main {
 }
 
 .edu {
-    margin: 1rem 3rem;
+    margin: 2rem 3rem;
     font-size: 1rem;
+    padding-bottom: 2rem;
 }
 
 #title-GA {
@@ -219,7 +241,7 @@ main {
 }
 
 #icon-links img {
-    width: 5%;
+    width: 3.5%;
     padding: 5px;
     padding-left: 15px;
 }
