@@ -41,7 +41,6 @@ main {
     margin: 5px;
     font-size: 1.25em;
     color: white;
-    /* background-color: dodgerblue; */
     display: inline-block;
     padding: 1em;
     text-align: center;
@@ -68,6 +67,9 @@ main {
 
 }
 
+#binary:hover {
+    border: solid 4px whitesmoke;
+}
 /* ---------------------------------- About -------------------------------------------------- */
 
 #about {
@@ -88,6 +90,7 @@ main {
 }
 
 .about-sub {
+    margin-top: 1em;
     text-align: center;
     font-size: 1.5em;
     padding-bottom: 1em;
@@ -168,6 +171,9 @@ main {
     font-size: 1.25rem;
 }
 
+.project-name {
+    font-size: 1.5em;
+}
 /* ---------------------------------- Education ------------------------------------ */
 
 #education {
@@ -213,7 +219,7 @@ main {
 }
 
 #icon-links img {
-    width: 10%;
+    width: 5%;
     padding: 5px;
     padding-left: 15px;
 }
