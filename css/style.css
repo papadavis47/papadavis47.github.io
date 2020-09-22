@@ -62,7 +62,7 @@ p {
 #binary {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
     margin-top: 1.5em;
     border: solid 2px #0984e3;
 
@@ -111,7 +111,7 @@ p {
 }
 
 .about-sub {
-    margin-top: 1em;
+    margin-top: 2em;
     text-align: center;
     font-size: 1.5em;
     padding-bottom: 1em;
@@ -141,6 +141,10 @@ p {
 
 #email:hover {
     background-color: #2d3436;
+}
+
+footer:hover {
+    background-color: #182C61;
 }
 
 /* -------------------------------- Projects ------------------------------------------- */
@@ -220,16 +224,46 @@ p {
 #education-container h2 {
     font-size: 1.25rem;
     font-weight: bold;
+    padding-top: 2rem;
 }
 
 .edu {
-    margin: 2rem 3rem;
+    margin: 1rem 2rem;
     font-size: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 #title-GA {
     font-weight: bold;
+    margin-top: 5rem;
+}
+
+
+/*--------------------------------------Footer ----------------------------------------------  */
+footer {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+#copyright {
+    padding-bottom: 12px;
+}
+
+
+.footer-content {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+#oscar {
+    text-align: right;
+}
+
+q {
+    margin-top: 16px;
+    padding-top: 16px;
+    font-style: italic;
 }
 
 /* ------------------------------------ Icons --------------------------------------------- */
