@@ -70,6 +70,10 @@ p {
 
 /* -----------------------------------Hover Effects --------------------------------------------- */
 
+.about-sub:hover {
+    font-weight: 800;
+}
+
 #binary:hover {
     border: solid 4px whitesmoke;
 }
@@ -89,6 +93,9 @@ p {
     border: solid 4px whitesmoke
 }
 
+header:hover {
+    font-size: 16.15px;
+} 
 
 
 /* ---------------------------------- About -------------------------------------------------- */
