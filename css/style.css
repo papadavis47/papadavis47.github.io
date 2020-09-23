@@ -32,6 +32,7 @@ header {
 main {
     text-align: center;
     background-color: #182C61;
+    border-bottom: solid 2px #0984e3;
 }
 
 p {
@@ -100,6 +101,10 @@ span {
 header:hover {
     font-size: 16.15px;
 } 
+
+main:hover {
+    border-bottom: solid 2px whitesmoke;
+}
 
 
 /* ---------------------------------- About -------------------------------------------------- */
