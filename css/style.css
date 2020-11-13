@@ -1,300 +1,287 @@
 html {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 body {
-    color: white;
-    font-family: 'Raleway', sans-serif;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 header {
-    background-color: #2d3436;
-    padding-top: 1.5em;
+  background-color: #2d3436;
+  padding-top: 1.5em;
 }
 
 #header-sub {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 main {
-    text-align: center;
-    background-color: #182C61;
-    border-bottom: solid 2px #0984e3;
+  text-align: center;
+  background-color: #182c61;
+  border-bottom: solid 2px #0984e3;
 }
 
 p {
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 /* ----------------------------- Navigation ------------------------------------ */
 
-
 .nav-link {
-    text-decoration: none;
-    margin: 5px;
-    font-size: 1.25em;
-    color: white;
-    display: inline-block;
-    padding: 1em;
-    text-align: center;
-
+  text-decoration: none;
+  margin: 5px;
+  font-size: 1.25em;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
 }
 
-
 .nav-bar {
-    background-color: #182C61;
-    text-align: center;
+  background-color: #182c61;
+  text-align: center;
 }
 
 /* -------------------------------- Images ------------------------------------------------ */
 
 #binary {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 6em;
-    margin-top: 1.5em;
-    border: solid 2px #0984e3;
-
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 6em;
+  margin-top: 1.5em;
+  border: solid 2px #0984e3;
 }
 
 /* -----------------------------------Hover Effects --------------------------------------------- */
 
 .about-sub:hover {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 #binary:hover {
-    border: solid 4px whitesmoke;
+  border: solid 4px whitesmoke;
 }
 
 .nav-link:hover {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 #about-container:hover {
-    border: solid 4px whitesmoke;
+  border: solid 4px whitesmoke;
 }
 
 #projects-container:hover {
-    border: solid 4px whitesmoke
+  border: solid 4px whitesmoke;
 }
 #education-container:hover {
-    border: solid 4px whitesmoke
+  border: solid 4px whitesmoke;
 }
 
 header:hover {
-    font-size: 16.15px;
-} 
-
-main:hover {
-    border-bottom: solid 2px whitesmoke;
+  font-size: 16.15px;
 }
 
+main:hover {
+  border-bottom: solid 2px whitesmoke;
+}
 
 /* ---------------------------------- About -------------------------------------------------- */
 
 #about {
-    background-color: #2d3436;
-    font-size: 1.2rem;
-    padding-top: 1em;
-    padding-bottom: 1em;
+  background-color: #2d3436;
+  font-size: 1.2rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #about-container {
-    border: solid 2px #0984e3;
-    background-color: #182C61;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 2em;
+  border: solid 2px #0984e3;
+  background-color: #182c61;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
 }
 
 .about-sub {
-    margin-top: 2em;
-    text-align: center;
-    font-size: 1.5em;
-    padding-bottom: 1em;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 1em;
 }
 
 #about-container p {
-    margin-right: 20px;
-    margin-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 #about-container ul {
-    text-align: center;
+  text-align: center;
 }
 
 #about-container li {
-    padding-top: 12px;
+  padding-top: 12px;
 }
 
 #email {
-    padding-top: 30px;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 30px;
-    margin-top: 1em;
-    font-size: 1rem;
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30px;
+  margin-top: 1em;
+  font-size: 1rem;
 }
 
 #email:hover {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 footer:hover {
-    background-color: #182C61;
+  background-color: #182c61;
 }
 
 /* -------------------------------- Projects ------------------------------------------- */
 
 #click-direction {
-    font-style: italic;
-    font-weight: bold;
+  font-style: italic;
+  font-weight: bold;
 }
 
 #projects {
-    background-color: #2d3436;
-    padding: 1em;
+  background-color: #2d3436;
+  padding: 1em;
 }
 
 #projects-container {
-    background-color: #182C61;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 2em;
-    border: solid 2px #0984e3;
+  background-color: #182c61;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  border: solid 2px #0984e3;
 }
 
 #projects-container img {
-    width: 50%;
+  width: 50%;
 }
 
 .project {
-    text-align: center;
-    margin: 2em 0;
-
+  text-align: center;
+  margin: 2em 0;
 }
 
 #projects-container h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 #projects-container p {
-    font-size: 1rem;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: center;
 }
 
 #projects h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .project-name {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 /* ---------------------------------- Education ------------------------------------ */
 
 #education {
-    background-color: #2d3436;
-    padding: 1em;
+  background-color: #2d3436;
+  padding: 1em;
 }
 
 #education-container {
-    background-color: #182C61;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding: 2em;
-    border: solid 2px #0984e3;
+  background-color: #182c61;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 2em;
+  border: solid 2px #0984e3;
 }
 
 #education-container p {
-    text-align: justify;
-    margin-top: 1em;
+  text-align: justify;
+  margin-top: 1em;
 }
 
 #education-container h2 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    padding-top: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-top: 2rem;
 }
 
 .edu {
-    margin: 1rem 2rem;
-    font-size: 1rem;
-    padding-bottom: 1rem;
+  margin: 1rem 2rem;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 #title-GA {
-    font-weight: bold;
-    margin-top: 5rem;
+  font-weight: bold;
+  margin-top: 5rem;
 }
-
 
 /*--------------------------------------Footer ----------------------------------------------  */
 footer {
-    padding-top: 20px;
-    font-size: 1.2rem;
+  padding-top: 20px;
+  font-size: 1.2rem;
 }
 
 #copyright {
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 }
-
 
 .footer-content {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-}
-
-#oscar {
-    text-align: right;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
 }
 
 q {
-    margin-top: 16px;
-    padding-top: 16px;
-    font-style: italic;
+  margin-top: 16px;
+  padding-top: 16px;
+  font-style: italic;
 }
 
 /* ------------------------------------ Icons --------------------------------------------- */
 
 #icon-links {
-    background-color: #2d3436;
-    padding: 1em;
-    text-align: center;
+  background-color: #2d3436;
+  padding: 1em;
+  text-align: center;
 }
 
 #icon-links img {
-    width: 3.5%;
-    padding: 5px;
-    padding-left: 15px;
+  width: 3.5%;
+  padding: 5px;
+  padding-left: 15px;
 }
-
 
 /* ------------------------------Media Queries------------------------------- */
