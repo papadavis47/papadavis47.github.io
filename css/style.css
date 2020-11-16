@@ -46,7 +46,7 @@ span {
 
 .nav-link {
   text-decoration: none;
-  margin: 5px;
+  margin: 10px;
   font-size: 1.25em;
   color: white;
   display: inline-block;
@@ -57,6 +57,8 @@ span {
 .nav-bar {
   background-color: #182c61;
   text-align: center;
+  border-top: solid 2px #0984e3;
+  padding-top: 20px;
 }
 
 /* -------------------------------- Images ------------------------------------------------ */
@@ -70,6 +72,11 @@ span {
 }
 
 /* -----------------------------------Hover Effects --------------------------------------------- */
+
+.nav-bar:hover {
+  border-top: solid 3px whitesmoke;
+
+}
 
 .about-sub:hover {
   font-weight: 800;
@@ -106,7 +113,7 @@ main:hover {
 
 #about {
   background-color: #2d3436;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -191,7 +198,6 @@ footer:hover {
 
 #projects-container h2 {
   text-align: center;
-  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -227,7 +233,7 @@ footer:hover {
 }
 
 #education-container p {
-  text-align: justify;
+  text-align: left;
   margin-top: 1em;
 }
 
@@ -285,3 +291,28 @@ q {
 }
 
 /* ------------------------------Media Queries------------------------------- */
+
+@media screen and (max-width: 800px) {
+
+
+  p {
+    font-size: .85rem;
+  }
+
+  #icon-links img {
+    width: 20%;
+  }
+
+  .project p {
+    font-size: .75rem;
+  }
+
+  #education-container h2 {
+  font-size: 1rem;
+}
+
+  .edu h1 {
+    font-size: 1.5rem;
+  }
+
+}
