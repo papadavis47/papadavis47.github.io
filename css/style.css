@@ -109,6 +109,10 @@ main:hover {
   border-bottom: solid 2px whitesmoke;
 }
 
+.project:hover {
+  font-weight: bold;
+}
+
 /* ---------------------------------- About -------------------------------------------------- */
 
 #about {
@@ -208,13 +212,16 @@ footer:hover {
   text-align: center;
 }
 
-#projects h2 {
-  font-size: 1.5rem;
-}
+/* The below 3 lines are a little redundant, but I will target this later.  */
 
 .project-name {
   font-size: 1.5em;
 }
+
+#projects-container h1 {
+  font-size: 1.5rem;
+}
+
 /* ---------------------------------- Education ------------------------------------ */
 
 #education {
@@ -313,6 +320,10 @@ q {
 
   .edu h1 {
     font-size: 1.5rem;
+  }
+
+  #binary {
+    width: 90%;
   }
 
 }
