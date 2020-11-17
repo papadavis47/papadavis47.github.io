@@ -75,7 +75,6 @@ span {
 
 .nav-bar:hover {
   border-top: solid 3px whitesmoke;
-
 }
 
 .about-sub:hover {
@@ -155,7 +154,6 @@ main:hover {
 #email {
   padding-top: 30px;
   text-align: center;
-  font-weight: bold;
   padding-bottom: 30px;
   margin-top: 1em;
   font-size: 1rem;
@@ -300,10 +298,8 @@ q {
 /* ------------------------------Media Queries------------------------------- */
 
 @media screen and (max-width: 800px) {
-
-
   p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 
   #icon-links img {
@@ -311,12 +307,12 @@ q {
   }
 
   .project p {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 
   #education-container h2 {
-  font-size: 1rem;
-}
+    font-size: 1rem;
+  }
 
   .edu h1 {
     font-size: 1.5rem;
@@ -325,5 +321,4 @@ q {
   #binary {
     width: 90%;
   }
-
 }
