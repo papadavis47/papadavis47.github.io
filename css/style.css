@@ -330,4 +330,8 @@ q {
   #binary {
     width: 90%;
   }
+
+  #email {
+    font-size: .6rem;
+  }
 }
