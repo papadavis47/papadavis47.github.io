@@ -151,6 +151,11 @@ main:hover {
   padding-top: 12px;
 }
 
+#about a {
+  text-decoration: none;
+  color: lightblue;
+}
+
 #email {
   border: solid 2px #0984e3;
   padding-top: 30px;
