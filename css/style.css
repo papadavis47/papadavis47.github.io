@@ -71,6 +71,10 @@ span {
   border: solid 2px #0984e3;
 }
 
+#papa-image {
+  border: solid 1px #0984e3;
+}
+
 /* -----------------------------------Hover Effects --------------------------------------------- */
 
 .nav-bar:hover {
