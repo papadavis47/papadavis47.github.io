@@ -15,12 +15,27 @@
     <meta name="twitter:image:alt" content="My two sons, when they were about 7 years old" />
     <!--  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            "sans": ["Roboto Flex", "Inter", "sans-serif"],
+          },
+        },
+      };
+    </script>
     <title>John William Davis GitHub Page</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="bg-blue-50">
     <div class="">
-      <nav class="bg-blue-900 shadow-b-lg shadow-gray-50">
+      <nav class="bg-blue-900 shadow-b-lg shadow-gray-50 w-full">
         <div
           class="flex items-center text-white px-20 md:px-4 py-5 shadow-lg lg:justify-between max-w-6xl mx-auto"
         >
@@ -50,19 +65,17 @@
         </div>
       </nav>
 
-      <div>
-        <img src="assets/images/binary.jpg" alt="Binary Numbers on Screen" />
+      <div style="background-image: url('assets/images/binary.jpg')" class="mt-10 h-screen py-20">
+        <div class="container mt-30 px-6 mx-auto">
+          <h2 class="mb-2 text-4xl font-bold text-gray-200 tracking-wider">John William Davis</h2>
+        </div>
       </div>
 
       <section>
         <h2>About Me</h2>
         <p>
-          I am a Seattle based software engineer with experience in JavaScript, React, Node, Python,
-          Django, and Flask.
-        </p>
-        <p>
-          In addition to a passion for web development, I have a side interest in ethical hacking. I
-          very much enjoy CTF competitions and puzzle solving.
+          I am a Seattle based software engineer with experience in JavaScript, React, Node,
+          Next.js, TailwindCSS, styled-components.
         </p>
         <h2>Skills</h2>
         <ul>
