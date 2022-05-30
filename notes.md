@@ -11,3 +11,7 @@
 ```css
 class="mt-10 h-screen py-20"
 ```
+
+More experience - deleted for now - but will include later:
+
+, React, Node, Next.js, TailwindCSS and styled-components.
