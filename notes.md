@@ -7,3 +7,7 @@
 --light-blue: hsl(206.1, 92.4%, 46.3%);
 --shade-of-white: hsl(0, 0%, 96%);
 ```
+
+```css
+class="mt-10 h-screen py-20"
+```
