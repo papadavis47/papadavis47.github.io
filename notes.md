@@ -30,3 +30,9 @@ More experience - deleted for now - but will include later:
   </g>
 </svg>
 ```
+
+```html
+<p>My recent <a href="https://dev.to/papadavis47/">blog posts</a> can be found at Dev.to</p>
+<h1>Recent Projects</h1>
+<p>Click on any screenshot to go to the GitHub repository</p>
+```
