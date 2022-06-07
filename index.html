@@ -45,9 +45,10 @@
   <!-- End Head Information -->
 
   <body class="bg-indigo-50">
+    <!-- container div begins on line below -->
     <div class="h-screen">
       <nav
-        class="sticky top-0 bg-gradient-to-r from-blue-700/90 to-blue-500/90 shadow-b-lg shadow-gray-50 w-full"
+        class="sticky top-0 bg-gradient-to-r from-blue-700/90 to-blue-500/90 shadow-lg shadow-slate-600 w-full"
       >
         <div
           class="flex items-center text-white px-6 py-3 shadow-lg sm:justify-center lg:justify-between max-w-6xl mx-auto"
@@ -64,7 +65,7 @@
           <!--  -->
           <!-- right side of bar -->
           <div class="hidden lg:flex space-x-4 items-center lg:mr-10">
-            <div class="focus:ring-2 ring-blue-500">
+            <div class="">
               <a
                 href="https://github.com/papadavis47/papadavis47.github.io/tree/new-profile"
                 target="_blank"
@@ -121,12 +122,13 @@
             software engineer
           </h3>
         </div>
-        <div class="max-w-4xl font-md sm:w-auto max-w-7xl">
+        <div class="max-w-4xl font-md sm:w-auto">
           <p class="px-6 pt-2 text-lg sm:text-xl font-semibold">
             I am a Seattle based developer - currently focusing on JavaScript, Typescript and React.
           </p>
         </div>
       </div>
+      <!-- end intro info -->
 
       <!-- skills -->
 
@@ -134,58 +136,66 @@
         <div class="py-4 px-6">
           <h3 class="text-xl sm:text-3xl font-black text-blue-500">skill set</h3>
         </div>
-        <div class="px-3 flex flex-col">
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md bg-slate-50 max-w-4xl">
-            <p class="mt-2 font-md text-lg sm:text-xl">JavaScript</p>
-            <p>
-              This is the language I am most comfortable with and have the most experience in. I
-              love JavaScript.
+        <div class="px-3 flex flex-col justify-between">
+          <div class="py-2 px-6 mt-2 flex flex-col mt-2 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-2 font-bold text-xl sm:text-2xl">JavaScript</p>
+            <p class="py-2 text-md sm:text-lg">
+              This is the language I have the most experience with.
             </p>
           </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md bg-slate-50 max-w-4xl">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">React</p>
-            <p>My favorite way of building user interfaces. A brilliant library.</p>
+          <div class="py-4 px-6 flex mt-4 flex-col shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="mt-1 font-bold max-w-4xl text-lg sm:text-2xl">React</p>
+            <p class="py-2 text-md sm:text-lg">My favorite way of building user interfaces.</p>
           </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">Express</p>
-            <p>Definitely my "go-to" library for building a Node server.</p>
-          </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">styled-components</p>
-            <p>I have used this for multiple projects and I love this library.</p>
-          </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">TailwindCSS</p>
-            <p>An amazing way of styling web pages. I have used this for several projects.</p>
-          </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">Python/Django</p>
-            <p>My favorite all in one package for building a backend from scratch.</p>
-          </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">PostgreSQL</p>
-            <p>
-              Most of my SQL experience has been with using this database choice. Although, I have
-              found it translates perfectly well to other SQL flavors.
+          <div class="py-2 px-6 mt-4 flex flex-col shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">Express</p>
+            <p class="py-2 text-md sm:text-lg">
+              Definitely my "go-to" library for building a Node server.
             </p>
           </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">MongoDB</p>
-            <p>
-              The first document based DB I have ever worked with. Brilliant work by the MongoDB
-              team and getting better all the time.
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">styled-components</p>
+            <p class="py-2 text-md sm:text-lg">
+              I have used this for multiple projects and I love this library.
             </p>
           </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">TypeScript</p>
-            <p>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">TailwindCSS</p>
+            <p class="py-2 text-md sm:text-lg">
+              An amazing way of styling web pages. I have used this for several projects.
+            </p>
+          </div>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">Django</p>
+            <p class="py-2 text-md sm:text-lg">
+              My favorite Python package. I have built a few things with Django. This library is my
+              first choice besides Express with Node.
+            </p>
+          </div>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">PostgreSQL</p>
+            <p class="py-2 text-md sm:text-lg">
+              Most of my SQL experience has been with using this database. I have found that it
+              translates perfectly well to other SQL flavors such as MSQL or SQLite.
+            </p>
+          </div>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">MongoDB</p>
+            <p class="py-2 text-md sm:text-lg">
+              The first document based DB I have ever worked with. It is a great product from the
+              MongoDB team and it is getting better all the time.
+            </p>
+          </div>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">TypeScript</p>
+            <p class="py-2 text-md sm:text-lg">
               A great extension to the JavaScript language. I am learning more about this superset
               everyday.
             </p>
           </div>
-          <div class="py-2 px-3 flex flex-col m-2 shadow-md">
-            <p class="mt-2 font-md max-w-4xl text-lg sm:text-xl">Rust</p>
-            <p>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-md bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">Rust</p>
+            <p class="py-2 text-md sm:text-lg">
               My favorite low level language. I am loving the adoption of Rust on modern projects.
             </p>
           </div>
@@ -216,6 +226,8 @@
           </div>
         </div>
       </div>
+
+      <!-- projects begin here -->
 
       <div class="pb-5 px-6 max-w-6xl mx-auto my-10">
         <div class="px-4 py-6">
@@ -344,11 +356,15 @@
         </div>
       </div>
 
+      <!-- begin footer html -->
+
       <footer class="bg-gradient-to-l from-blue-700/90 to-blue-500/90 shadow-gray-50 w-full">
         <div class="h-20 flex justify-center items-center">
           <p class="text-white text-xl">&copy; John William Davis &nbsp;&nbsp; 2022</p>
         </div>
       </footer>
+
+      <!-- container div ends on line below  -->
     </div>
   </body>
 </html>
