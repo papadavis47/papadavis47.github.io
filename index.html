@@ -33,7 +33,7 @@
       tailwind.config = {
         theme: {
           fontFamily: {
-            "sans": ["Inter", "sans-serif"],
+            sans: ['Inter', 'sans-serif'],
           },
         },
       };
@@ -55,7 +55,19 @@
         >
           <!-- left side of bar  -->
           <div class="flex items-center space-x-4">
-            <img class="w-14" src="images/white_water_wave_icon.svg" alt="A Wave logo" />
+            <svg
+              class="w-14 h-14 fill-current text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 1200"
+            >
+              <path
+                d="M1087.5 768.32h-14.766V239.34c0-41.344-33.656-75-75-75h-795.47c-41.344 0-75 33.656-75 75v529.03l-14.766-.047c-41.344 0-75 33.656-75 75v79.828c0 62.016 50.484 112.5 112.5 112.5h900c62.016 0 112.5-50.484 112.5-112.5v-79.828c0-41.344-33.656-75-75-75zM202.26 239.34h795.47v529.03l-795.47-.047zm885.24 683.81c0 20.672-16.781 37.5-37.5 37.5H150c-20.672 0-37.5-16.828-37.5-37.5v-79.828h975z"
+              />
+              <path
+                d="M483.89 393.79c-12.75-16.406-36.281-19.312-52.594-6.563l-111.75 87c-9.14 7.079-14.484 18-14.484 29.579s5.344 22.5 14.484 29.578l111.75 86.953a37.25 37.25 0 0 0 23.016 7.921c11.156 0 22.219-4.968 29.625-14.484 12.703-16.359 9.797-39.89-6.563-52.594l-73.734-57.375 73.735-57.422c16.312-12.703 19.219-36.234 6.515-52.594zM880.45 474.24l-111.7-87c-16.406-12.75-39.891-9.844-52.594 6.563-12.703 16.359-9.797 39.89 6.563 52.594l73.733 57.422-73.734 57.374c-16.359 12.703-19.266 36.281-6.562 52.594a37.593 37.593 0 0 0 29.625 14.484c8.063 0 16.172-2.578 22.969-7.921l111.7-86.953c9.094-7.079 14.484-18 14.484-29.578s-5.344-22.453-14.484-29.578zM653.9 398.53c-18.609-9.469-41.062-2.11-50.484 16.312l-73.594 143.86c-9.422 18.469-2.156 41.016 16.312 50.438a37.155 37.155 0 0 0 17.016 4.125c13.641 0 26.766-7.453 33.422-20.438l73.594-143.86c9.422-18.469 2.11-41.062-16.266-50.438z"
+              />
+            </svg>
+            <!-- <img class="w-14" src="images/white_water_wave_icon.svg" alt="A Wave logo" /> -->
             <span class="text-xl font-bold tracking-wider hover:underline"
               ><a href="https://github.com/papadavis47" target="_blank" rel="noreferrer"
                 >@papadavis47</a
@@ -117,7 +129,7 @@
       <!-- information about myself here -->
       <div class="text-indigo-800 max-w-6xl mx-auto mt-8 mb-4 min-w-[360px] pt-8 pb-0 px-4">
         <div class="px-6 pt-6 pb-2">
-          <h2 class="text-3xl sm:text-5xl font-black text-blue-500">john william davis</h2>
+          <h2 class="text-3xl sm:text-5xl font-black text-blue-500"> john william davis </h2>
           <h3 class="text-xl sm:text-2xl tracking-wide font-bold text-blue-500">
             software engineer
           </h3>
@@ -134,80 +146,55 @@
 
       <div class="text-indigo-900 px-4 max-w-6xl mx-auto py-4">
         <div class="py-4 px-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500">my skills</h3>
+          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> my skills </h3>
         </div>
         <div class="px-3 flex flex-col justify-between max-w-3xl">
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div class="py-2 px-6 mt-2 flex flex-col mt-2 shadow-xl bg-slate-50 rounded-lg">
-              <p class="my-2 font-bold text-xl sm:text-2xl">JavaScript</p>
-              <p class="py-2 text-md sm:text-lg">
-                This is the language I have the most experience with.
-              </p>
-            </div>
-          </a>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
+            <p class="my-1 font-bold text-lg sm:text-2xl"> TypeScript </p>
+            <p class="py-2 text-md sm:text-lg"
+              >This is the language I have the most experience with.</p
+            >
+          </div>
           <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
             <div class="py-4 px-6 flex mt-4 flex-col shadow-xl bg-slate-50 rounded-lg">
-              <p class="mt-1 font-bold text-lg sm:text-2xl">React</p>
-              <p class="py-2 text-md sm:text-lg">My favorite way of building user interfaces.</p>
+              <p class="mt-1 font-bold text-lg sm:text-2xl"> React </p>
+              <p class="py-2 text-md sm:text-lg"
+                >One of my favorite way of building user interfaces.
+              </p>
             </div>
           </a>
           <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
             <div class="py-4 px-6 flex mt-4 flex-col shadow-xl bg-slate-50 rounded-lg">
-              <p class="mt-1 font-bold text-lg sm:text-2xl">Next.js</p>
+              <p class="mt-1 font-bold text-lg sm:text-2xl"> Next.js </p>
               <p class="py-2 text-md sm:text-lg">
                 The React framework I have used for all my major projects.
               </p>
             </div>
           </a>
-          <div class="py-2 px-6 mt-4 flex flex-col shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">Express</p>
-            <p class="py-2 text-md sm:text-lg">
-              Definitely my "go-to" library for building a Node server.
-            </p>
-          </div>
           <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">styled-components</p>
+            <p class="my-1 font-bold text-lg sm:text-2xl">panda css</p>
             <p class="py-2 text-md sm:text-lg">
               I have used this for multiple projects and I love this library.
             </p>
           </div>
           <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">TailwindCSS</p>
+            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl"> TailwindCSS </p>
             <p class="py-2 text-md sm:text-lg">
               An amazing way of styling web pages. I have used this for several projects.
             </p>
           </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">Django</p>
-            <p class="py-2 text-md sm:text-lg">
-              My favorite Python package. I have built a few things with Django. This library is my
-              first choice besides Express with Node.
-            </p>
-          </div>
           <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 max-w-4xl rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">PostgreSQL</p>
+            <p class="my-1 font-bold text-lg sm:text-2xl"> PostgreSQL </p>
             <p class="py-2 text-md sm:text-lg">
               Most of my SQL experience has been with using this database. I have found that it
               translates perfectly well to other SQL flavors such as MSQL or SQLite.
             </p>
           </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">MongoDB</p>
-            <p class="py-2 text-md sm:text-lg">
-              The first document based DB I have ever worked with. It is a great product from the
-              MongoDB team and it is getting better all the time.
-            </p>
-          </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">TypeScript</p>
-            <p class="py-2 text-md sm:text-lg">
-              A great extension to the JavaScript language. I am learning more about this superset
-              everyday.
-            </p>
+          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 max-w-4xl rounded-lg">
+            <p class="my-1 font-bold text-lg sm:text-2xl">Go</p>
+            <p class="py-2 text-md sm:text-lg"
+              >One of my favorite languages with great ergonomics.</p
+            >
           </div>
           <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
             <p class="my-1 font-bold text-lg sm:text-2xl">Rust</p>
@@ -222,12 +209,12 @@
 
       <div class="text-indigo-900 px-4 max-w-6xl mx-auto py-4">
         <div class="py-4 px-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500">education</h3>
+          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> education </h3>
         </div>
         <div class="px-3">
           <div class="my-2 px-4 text-lg sm:text-xl max-w-4xl border-b-4 border-indigo-100 pb-6">
-            <h2 class="font-bold">General Assembly (GA) - Seattle</h2>
-            <p class="font-semibold">Software Engineering Immersive (SEI)</p>
+            <h2 class="font-bold"> General Assembly (GA) - Seattle </h2>
+            <p class="font-semibold"> Software Engineering Immersive (SEI) </p>
             <p class="font-md">January 2020 - April 2020</p>
             <p class="font-semibold italic">
               An intensive, twelve-week, 400+ hour program focused on product development
@@ -251,7 +238,7 @@
 
       <div class="pb-5 px-6 max-w-6xl mx-auto mt-1">
         <div class="px-4 py-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500">projects</h3>
+          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> projects </h3>
         </div>
 
         <div class="px-3 my-6 text-indigo-900">
@@ -273,7 +260,7 @@
             <h2 class="text-2xl font-semibold italic">
               An organizational tool for programming mentors
             </h2>
-            <p class="text-xl font-md">JavaScript, Express.js, Postgres</p>
+            <p class="text-xl font-md"> JavaScript, Express.js, Postgres </p>
             <a href="https://github.com/papadavis47/coder-coach-organizer" target="_blank"
               ><img
                 class="w-full md:w-3/4 rounded-lg my-4"
@@ -400,11 +387,11 @@
 
       <div class="text-indigo-900 pb-5 px-6 max-w-6xl mx-auto my-10">
         <div class="px-4 py-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500">things that bring me joy</h3>
+          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> things that bring me joy </h3>
         </div>
         <div class="px-3 max-w-4xl">
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">Spending time with my family</p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">Getting sun and exercise</p>
+          <p class="mt-2 text-lg sm:text-xl font-semibold italic"> Spending time with my family </p>
+          <p class="mt-2 text-lg sm:text-xl font-semibold italic"> Getting sun and exercise </p>
           <p class="mt-2 text-lg sm:text-xl font-semibold italic">
             Reading - one of the simplest ways to a richer life
           </p>
@@ -421,7 +408,7 @@
           <p class="mt-2 text-lg sm:text-xl font-semibold italic">
             Sleeping in on weekend mornings
           </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">Learning new things</p>
+          <p class="mt-2 text-lg sm:text-xl font-semibold italic"> Learning new things </p>
         </div>
       </div>
 
@@ -429,7 +416,7 @@
 
       <footer class="bg-gradient-to-l from-blue-700/90 to-blue-500/90 shadow-gray-50 w-full">
         <div class="h-20 flex justify-center items-center">
-          <p class="text-white text-xl">&copy; John William Davis &nbsp;&nbsp; 2022</p>
+          <p class="text-white text-xl"> &copy; John William Davis &nbsp;&nbsp; 2025 </p>
         </div>
       </footer>
 
