@@ -1,426 +1,602 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <!-- Ton of information in the Head -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Borrowed from Josh Comeau -->
-    <meta name="author" content="John William Davis" />
-    <meta name="description" content="A Developer Profile Page" />
-    <meta property="og:title" content="JWD - Frontend Developer" />
-    <meta property="og:description" content="papadavis47 GH Page" />
-    <meta property="og:image" content="./assets/images/profile.jpg" />
-    <meta property="og:url" content="https://papadavis47.github.io" />
-    <meta property="og:site_name" content="papadavis47 GitHub" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image:alt" content="My two sons, when they were about 7 years old" />
-    <!--  -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Ton of information in the Head -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Borrowed from Josh Comeau -->
+        <meta name="author" content="John William Davis" />
+        <meta name="description" content="A Developer Profile Page" />
+        <meta property="og:title" content="JWD - Frontend Developer" />
+        <meta property="og:description" content="papadavis47 GH Page" />
+        <meta property="og:image" content="./assets/images/profile.jpg" />
+        <meta property="og:url" content="https://papadavis47.github.io" />
+        <meta property="og:site_name" content="papadavis47 GitHub" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image:alt"
+            content="My two sons, when they were about 7 years old"
+        />
+        <!--  -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
 
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-          },
-        },
-      };
-    </script>
-    <title>John William Davis GitHub Page</title>
-    <link rel="icon" type="image/x-icon" href="images/blue-wave.ico" />
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
-  <!-- End Head Information -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                    },
+                },
+            };
+        </script>
+        <title>John William Davis GitHub Page</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="images/small-programming.ico"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/vue@3.5.19/dist/vue.global.min.js"
+        ></script>
+    </head>
+    <!-- End Head Information -->
 
-  <body class="bg-indigo-50">
-    <!-- container div begins on line below -->
-    <div class="h-screen">
-      <nav
-        class="sticky top-0 bg-gradient-to-r from-blue-700/90 to-blue-500/90 shadow-lg shadow-slate-600 w-full"
-      >
-        <div
-          class="flex items-center text-white px-6 py-3 shadow-lg sm:justify-center lg:justify-between max-w-6xl mx-auto"
-        >
-          <!-- left side of bar  -->
-          <div class="flex items-center space-x-4">
-            <svg
-              class="w-14 h-14 fill-current text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 1200"
+    <body class="bg-indigo-50">
+        <!-- container div begins on line below -->
+        <div class="h-screen">
+            <nav
+                class="sticky top-0 bg-gradient-to-r from-blue-700/90 to-blue-500/90 shadow-lg shadow-slate-600 w-full"
             >
-              <path
-                d="M1087.5 768.32h-14.766V239.34c0-41.344-33.656-75-75-75h-795.47c-41.344 0-75 33.656-75 75v529.03l-14.766-.047c-41.344 0-75 33.656-75 75v79.828c0 62.016 50.484 112.5 112.5 112.5h900c62.016 0 112.5-50.484 112.5-112.5v-79.828c0-41.344-33.656-75-75-75zM202.26 239.34h795.47v529.03l-795.47-.047zm885.24 683.81c0 20.672-16.781 37.5-37.5 37.5H150c-20.672 0-37.5-16.828-37.5-37.5v-79.828h975z"
-              />
-              <path
-                d="M483.89 393.79c-12.75-16.406-36.281-19.312-52.594-6.563l-111.75 87c-9.14 7.079-14.484 18-14.484 29.579s5.344 22.5 14.484 29.578l111.75 86.953a37.25 37.25 0 0 0 23.016 7.921c11.156 0 22.219-4.968 29.625-14.484 12.703-16.359 9.797-39.89-6.563-52.594l-73.734-57.375 73.735-57.422c16.312-12.703 19.219-36.234 6.515-52.594zM880.45 474.24l-111.7-87c-16.406-12.75-39.891-9.844-52.594 6.563-12.703 16.359-9.797 39.89 6.563 52.594l73.733 57.422-73.734 57.374c-16.359 12.703-19.266 36.281-6.562 52.594a37.593 37.593 0 0 0 29.625 14.484c8.063 0 16.172-2.578 22.969-7.921l111.7-86.953c9.094-7.079 14.484-18 14.484-29.578s-5.344-22.453-14.484-29.578zM653.9 398.53c-18.609-9.469-41.062-2.11-50.484 16.312l-73.594 143.86c-9.422 18.469-2.156 41.016 16.312 50.438a37.155 37.155 0 0 0 17.016 4.125c13.641 0 26.766-7.453 33.422-20.438l73.594-143.86c9.422-18.469 2.11-41.062-16.266-50.438z"
-              />
-            </svg>
-            <!-- <img class="w-14" src="images/white_water_wave_icon.svg" alt="A Wave logo" /> -->
-            <span class="text-xl font-bold tracking-wider hover:underline"
-              ><a href="https://github.com/papadavis47" target="_blank" rel="noreferrer"
-                >@papadavis47</a
-              ></span
+                <div
+                    class="flex items-center text-white px-6 py-3 shadow-lg sm:justify-center lg:justify-between max-w-6xl mx-auto"
+                >
+                    <!-- left side of bar  -->
+                    <div class="flex items-center space-x-4">
+                        <svg
+                            class="w-14 h-14 fill-current text-white"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1200 1200"
+                        >
+                            <path
+                                d="M1087.5 768.32h-14.766V239.34c0-41.344-33.656-75-75-75h-795.47c-41.344 0-75 33.656-75 75v529.03l-14.766-.047c-41.344 0-75 33.656-75 75v79.828c0 62.016 50.484 112.5 112.5 112.5h900c62.016 0 112.5-50.484 112.5-112.5v-79.828c0-41.344-33.656-75-75-75zM202.26 239.34h795.47v529.03l-795.47-.047zm885.24 683.81c0 20.672-16.781 37.5-37.5 37.5H150c-20.672 0-37.5-16.828-37.5-37.5v-79.828h975z"
+                            />
+                            <path
+                                d="M483.89 393.79c-12.75-16.406-36.281-19.312-52.594-6.563l-111.75 87c-9.14 7.079-14.484 18-14.484 29.579s5.344 22.5 14.484 29.578l111.75 86.953a37.25 37.25 0 0 0 23.016 7.921c11.156 0 22.219-4.968 29.625-14.484 12.703-16.359 9.797-39.89-6.563-52.594l-73.734-57.375 73.735-57.422c16.312-12.703 19.219-36.234 6.515-52.594zM880.45 474.24l-111.7-87c-16.406-12.75-39.891-9.844-52.594 6.563-12.703 16.359-9.797 39.89 6.563 52.594l73.733 57.422-73.734 57.374c-16.359 12.703-19.266 36.281-6.562 52.594a37.593 37.593 0 0 0 29.625 14.484c8.063 0 16.172-2.578 22.969-7.921l111.7-86.953c9.094-7.079 14.484-18 14.484-29.578s-5.344-22.453-14.484-29.578zM653.9 398.53c-18.609-9.469-41.062-2.11-50.484 16.312l-73.594 143.86c-9.422 18.469-2.156 41.016 16.312 50.438a37.155 37.155 0 0 0 17.016 4.125c13.641 0 26.766-7.453 33.422-20.438l73.594-143.86c9.422-18.469 2.11-41.062-16.266-50.438z"
+                            />
+                        </svg>
+                        <!-- <img class="w-14" src="images/white_water_wave_icon.svg" alt="A Wave logo" /> -->
+                        <span
+                            class="text-xl font-bold tracking-wider hover:underline"
+                            ><a
+                                href="https://github.com/papadavis47"
+                                target="_blank"
+                                rel="noreferrer"
+                                >@papadavis47</a
+                            ></span
+                        >
+                    </div>
+                    <!--  -->
+                    <!-- right side of bar -->
+                    <div class="hidden lg:flex space-x-4 items-center lg:mr-10">
+                        <div class="">
+                            <a
+                                href="https://github.com/papadavis47/papadavis47.github.io/tree/new-profile"
+                                target="_blank"
+                                rel="noreferrer"
+                                ><img
+                                    class="w-10 h-10"
+                                    src="images/white_github.svg"
+                                    alt="GitHub logo"
+                            /></a>
+                        </div>
+                        <div class="">
+                            <a
+                                href="https://stackoverflow.com/users/9111781/jwdavis"
+                                target="_blank"
+                                rel="noreferrer"
+                                ><img
+                                    class="w-10 h-10 text-white"
+                                    src="images/white_stackoverflow_icon.svg"
+                                    alt="StackOverflow logo"
+                            /></a>
+                        </div>
+                        <div class="">
+                            <a
+                                href="https://twitter.com/papadavis47"
+                                target="_blank"
+                                rel="noreferrer"
+                                ><img
+                                    class="w-10 h-10 text-white"
+                                    src="images/white_twitter.svg"
+                                    alt="Twitter logo"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="hidden text-xl lg:flex space-x-6 items-center md:mr-10"
+                    >
+                        <div class="hover:text-indigo-100 py-3 px-4">
+                            <a
+                                href="./johnwilliamdavis_resume.pdf"
+                                target="_blank"
+                                class="font-bold tracking-wide"
+                                >resume</a
+                            >
+                        </div>
+                        <div class="hover:text-indigo-100 py-3 px-4">
+                            <a
+                                href="mailto:jwdavisdeveloper@gmail.com"
+                                class="font-bold tracking-wide"
+                                >contact</a
+                            >
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </nav>
+
+            <!-- information about myself here -->
+            <div
+                class="text-indigo-800 max-w-6xl mx-auto mt-8 mb-4 min-w-[360px] pt-8 pb-0 px-4"
             >
-          </div>
-          <!--  -->
-          <!-- right side of bar -->
-          <div class="hidden lg:flex space-x-4 items-center lg:mr-10">
-            <div class="">
-              <a
-                href="https://github.com/papadavis47/papadavis47.github.io/tree/new-profile"
-                target="_blank"
-                rel="noreferrer"
-                ><img class="w-10 h-10" src="images/white_github.svg" alt="GitHub logo"
-              /></a>
+                <div class="px-6 pt-6 pb-2">
+                    <h2
+                        class="text-3xl sm:text-5xl font-black text-blue-500 capitalize"
+                    >
+                        john william davis
+                    </h2>
+                    <h3
+                        class="text-xl sm:text-2xl tracking-wide font-bold text-blue-500"
+                    >
+                        software engineer
+                    </h3>
+                </div>
+                <div class="max-w-4xl font-md sm:w-auto">
+                    <p
+                        class="px-6 max-w-3xl pt-2 text-lg sm:text-xl font-semibold"
+                    >
+                        I am a Seattle based developer - currently focusing on
+                        TypeScript, Go and Rust.
+                    </p>
+                </div>
             </div>
-            <div class="">
-              <a
-                href="https://stackoverflow.com/users/9111781/jwdavis"
-                target="_blank"
-                rel="noreferrer"
-                ><img
-                  class="w-10 h-10 text-white"
-                  src="images/white_stackoverflow_icon.svg"
-                  alt="StackOverflow logo"
-              /></a>
+            <!-- end intro info -->
+
+            <!-- skills -->
+
+            <div class="text-indigo-900 px-4 max-w-6xl mx-auto py-4">
+                <div class="py-4 px-6">
+                    <h3 class="text-xl sm:text-3xl font-black text-blue-500">
+                        skills
+                    </h3>
+                </div>
+                <div class="px-3 flex flex-col justify-between max-w-3xl">
+                    <div
+                        class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg"
+                    >
+                        <p class="my-1 font-bold text-lg sm:text-2xl">
+                            TypeScript
+                        </p>
+                        <p class="py-2 text-md sm:text-lg">
+                            This is the language I have the most experience
+                            with.
+                        </p>
+                    </div>
+                    <a
+                        href="https://reactjs.org/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <div
+                            class="py-4 px-6 flex mt-4 flex-col shadow-xl bg-slate-50 rounded-lg"
+                        >
+                            <p class="mt-1 font-bold text-lg sm:text-2xl">
+                                React
+                            </p>
+                            <p class="py-2 text-md sm:text-lg">
+                                One of my favorite way of building user
+                                interfaces.
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://nextjs.org/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <div
+                            class="py-4 px-6 flex mt-4 flex-col shadow-xl bg-slate-50 rounded-lg"
+                        >
+                            <p class="mt-1 font-bold text-lg sm:text-2xl">
+                                Next.js
+                            </p>
+                            <p class="py-2 text-md sm:text-lg">
+                                The React framework I have used for all my major
+                                projects.
+                            </p>
+                        </div>
+                    </a>
+                    <div
+                        class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg"
+                    >
+                        <p class="my-1 font-bold text-lg sm:text-2xl">
+                            Panda CSS
+                        </p>
+                        <p class="py-2 text-md sm:text-lg">
+                            I have used this for multiple projects and I love
+                            this library.
+                        </p>
+                    </div>
+                    <div
+                        class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg"
+                    >
+                        <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl">
+                            TailwindCSS
+                        </p>
+                        <p class="py-2 text-md sm:text-lg">
+                            An amazing way of styling web pages. I have used
+                            this for several projects.
+                        </p>
+                    </div>
+                    <div
+                        class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 max-w-4xl rounded-lg"
+                    >
+                        <p class="my-1 font-bold text-lg sm:text-2xl">
+                            PostgreSQL
+                        </p>
+                        <p class="py-2 text-md sm:text-lg">
+                            Most of my SQL experience has been with using this
+                            database. I have found that it translates perfectly
+                            well to other SQL flavors such as MSQL or SQLite.
+                        </p>
+                    </div>
+                    <div
+                        class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 max-w-4xl rounded-lg"
+                    >
+                        <p class="my-1 font-bold text-lg sm:text-2xl">Go</p>
+                        <p class="py-2 text-md sm:text-lg">
+                            One of my favorite languages with great ergonomics.
+                        </p>
+                    </div>
+                    <div
+                        class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg"
+                    >
+                        <p class="my-1 font-bold text-lg sm:text-2xl">Rust</p>
+                        <p class="py-2 text-md sm:text-lg">
+                            My favorite low level language. I am loving the
+                            adoption of Rust on modern projects.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="">
-              <a href="https://twitter.com/papadavis47" target="_blank" rel="noreferrer"
-                ><img
-                  class="w-10 h-10 text-white"
-                  src="images/white_twitter.svg"
-                  alt="Twitter logo"
-                />
-              </a>
+
+            <!-- education -->
+
+            <div class="text-indigo-900 px-4 max-w-6xl mx-auto py-4">
+                <div class="py-4 px-6">
+                    <h3 class="text-xl sm:text-3xl font-black text-blue-500">
+                        education
+                    </h3>
+                </div>
+                <div class="px-3">
+                    <div
+                        class="my-2 px-4 text-lg sm:text-xl max-w-4xl border-b-4 border-indigo-100 pb-6"
+                    >
+                        <h2 class="font-bold">
+                            General Assembly (GA) - Seattle
+                        </h2>
+                        <p class="font-semibold">
+                            Software Engineering Immersive (SEI)
+                        </p>
+                        <p class="font-md">January 2020 - April 2020</p>
+                        <p class="font-semibold italic">
+                            An intensive, twelve-week, 400+ hour program focused
+                            on product development fundamentals, object-oriented
+                            programming, MVC frameworks, data modeling and team
+                            collaboration strategies
+                        </p>
+                    </div>
+                    <div
+                        class="mt-2 px-4 max-w-4xl text-lg sm:text-xl pt-8 border-b-4 border-indigo-100 pb-6"
+                    >
+                        <h2 class="font-bold">Green River Community College</h2>
+                        <p class="font-md">May 1999 - August 2001</p>
+                        <p class="font-semibold italic">
+                            Documentary photography coursework. B&W film
+                            development and darkroom printing
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="hidden text-xl lg:flex space-x-6 items-center md:mr-10">
-            <div class="hover:text-indigo-100 py-3 px-4">
-              <a
-                href="./johnwilliamdavis_resume.pdf"
-                target="_blank"
-                class="font-bold tracking-wide"
-                >resume</a
-              >
+            <!-- projects begin here -->
+
+            <div class="pb-5 px-6 max-w-6xl mx-auto mt-1">
+                <div class="px-4 py-6">
+                    <h3 class="text-xl sm:text-3xl font-black text-blue-500">
+                        projects
+                    </h3>
+                </div>
+
+                <div class="px-3 my-6 text-indigo-900">
+                    <div class="pb-6 border-b-4">
+                        <h1 class="text-3xl font-bold">PAPA</h1>
+                        <h2 class="text-2xl font-semibold italic">
+                            A desktop journaling application for fathers
+                        </h2>
+                        <p class="text-xl font-md">JavaScript, Electron.js</p>
+                        <a
+                            href="https://github.com/papadavis47/PAPA"
+                            target="_blank"
+                            ><img
+                                class="w-full md:w-3/4 rounded-lg my-4"
+                                src="images/ScreenshotPapa.jpg"
+                                alt="Image for PAPA app"
+                        /></a>
+                    </div>
+                    <div class="mt-4 py-6 border-b-4">
+                        <h1 class="text-3xl font-bold">coderCoachOrganizer</h1>
+                        <h2 class="text-2xl font-semibold italic">
+                            An organizational tool for programming mentors
+                        </h2>
+                        <p class="text-xl font-md">
+                            JavaScript, Express.js, Postgres
+                        </p>
+                        <a
+                            href="https://github.com/papadavis47/coder-coach-organizer"
+                            target="_blank"
+                            ><img
+                                class="w-full md:w-3/4 rounded-lg my-4"
+                                src="images/ScreenshotCoderCoach.png"
+                                alt="Image for coderCoachOrganizer"
+                        /></a>
+                    </div>
+                    <div class="mt-4 py-6 border-b-4">
+                        <h1 class="text-3xl font-bold">Linda's Math Game</h1>
+                        <h2 class="text-2xl font-semibold italic">
+                            This is a math game for second / third graders.
+                            Flash card system
+                        </h2>
+                        <p class="text-xl font-md">JavaScript, HTML5, CSS</p>
+                        <a
+                            href="https://github.com/papadavis47/lindas-math-game"
+                            target="_blank"
+                            ><img
+                                class="w-full md:w-3/4 rounded-lg my-4"
+                                src="images/ScreenshotLindasMathGame.png"
+                                alt="Image for Linda's Math Game"
+                        /></a>
+                    </div>
+                </div>
             </div>
-            <div class="hover:text-indigo-100 py-3 px-4">
-              <a href="mailto:jwdavisdeveloper@gmail.com" class="font-bold tracking-wide"
-                >contact</a
-              >
+
+            <!-- more information about me -->
+            <!-- figured out how to use flex-auto here on these components -->
+            <div
+                class="text-indigo-900 max-w-6xl mx-auto min-w-[360px] py-4 px-4"
+            >
+                <div class="py-4 px-6">
+                    <h3 class="text-2xl sm:text-3xl font-black text-blue-500">
+                        links to docs of my favorite tools
+                    </h3>
+                </div>
+                <div class="px-3 flex max-w-4xl flex-wrap">
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-lg flex-auto"
+                    >
+                        <p
+                            class="text-lg sm:text-xl px-6 py-6 text-center font-md bg-indigo-100 font-semibold w-full"
+                        >
+                            <a
+                                href="https://beta.reactjs.org/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >React.js</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg text-center w-full sm:text-xl px-6 py-6 font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://nextjs.org/docs/getting-started"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Next.js</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg text-center w-full sm:text-xl px-6 py-6 font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://nuxt.com/docs/4.x/getting-started/introduction"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Nuxt.js</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg text-center sm:text-xl px-6 py-6 w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://orm.drizzle.team/docs/get-started"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Drizzle</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://supabase.com/docs"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Supabase</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="w-full text-center font-semibold text-lg sm:text-xl px-6 py-6 font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://tailwindcss.com/docs/installation"
+                                target="_blank"
+                                rel="noreferrer"
+                                >TailwindCSS</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://panda-css.com/docs/overview/getting-started"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Panda CSS</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://vuejs.org/guide/quick-start.html"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Vue.js</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://pop.system76.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Pop_OS</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://neovim.io/doc/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Neovim</a
+                            >
+                        </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center m-2 shadow-md flex-auto"
+                    >
+                        <p
+                            class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
+                        >
+                            <a
+                                href="https://zed.dev/docs/"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Zed</a
+                            >
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!--  -->
-        </div>
-      </nav>
 
-      <!-- information about myself here -->
-      <div class="text-indigo-800 max-w-6xl mx-auto mt-8 mb-4 min-w-[360px] pt-8 pb-0 px-4">
-        <div class="px-6 pt-6 pb-2">
-          <h2 class="text-3xl sm:text-5xl font-black text-blue-500"> john william davis </h2>
-          <h3 class="text-xl sm:text-2xl tracking-wide font-bold text-blue-500">
-            software engineer
-          </h3>
-        </div>
-        <div class="max-w-4xl font-md sm:w-auto">
-          <p class="px-6 max-w-3xl pt-2 text-lg sm:text-xl font-semibold">
-            I am a Seattle based developer - currently focusing on JavaScript, Typescript and React.
-          </p>
-        </div>
-      </div>
-      <!-- end intro info -->
+            <!-- things i do for fun -->
 
-      <!-- skills -->
+            <div class="text-indigo-900 pb-5 px-6 max-w-6xl mx-auto my-10">
+                <div class="px-4 py-6">
+                    <h3 class="text-xl sm:text-3xl font-black text-blue-500">
+                        things that bring me joy
+                    </h3>
+                </div>
+                <div class="px-3 max-w-4xl">
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Spending time with my family
+                    </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Warm sun and exercise
+                    </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Reading - one of the simplest ways to a richer life
+                    </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Netflix - World cinema at the click of a button
+                    </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Water, mountains, desert
+                    </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Any challenge met and conquered
+                    </p>
 
-      <div class="text-indigo-900 px-4 max-w-6xl mx-auto py-4">
-        <div class="py-4 px-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> my skills </h3>
-        </div>
-        <div class="px-3 flex flex-col justify-between max-w-3xl">
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl"> TypeScript </p>
-            <p class="py-2 text-md sm:text-lg"
-              >This is the language I have the most experience with.</p
-            >
-          </div>
-          <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-            <div class="py-4 px-6 flex mt-4 flex-col shadow-xl bg-slate-50 rounded-lg">
-              <p class="mt-1 font-bold text-lg sm:text-2xl"> React </p>
-              <p class="py-2 text-md sm:text-lg"
-                >One of my favorite way of building user interfaces.
-              </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Sleeping in on weekend mornings
+                    </p>
+                    <p class="mt-2 text-lg sm:text-xl font-semibold italic">
+                        Learning new things
+                    </p>
+                </div>
             </div>
-          </a>
-          <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-            <div class="py-4 px-6 flex mt-4 flex-col shadow-xl bg-slate-50 rounded-lg">
-              <p class="mt-1 font-bold text-lg sm:text-2xl"> Next.js </p>
-              <p class="py-2 text-md sm:text-lg">
-                The React framework I have used for all my major projects.
-              </p>
-            </div>
-          </a>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">panda css</p>
-            <p class="py-2 text-md sm:text-lg">
-              I have used this for multiple projects and I love this library.
-            </p>
-          </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold max-w-4xl text-lg sm:text-2xl"> TailwindCSS </p>
-            <p class="py-2 text-md sm:text-lg">
-              An amazing way of styling web pages. I have used this for several projects.
-            </p>
-          </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 max-w-4xl rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl"> PostgreSQL </p>
-            <p class="py-2 text-md sm:text-lg">
-              Most of my SQL experience has been with using this database. I have found that it
-              translates perfectly well to other SQL flavors such as MSQL or SQLite.
-            </p>
-          </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 max-w-4xl rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">Go</p>
-            <p class="py-2 text-md sm:text-lg"
-              >One of my favorite languages with great ergonomics.</p
+
+            <!-- begin footer html -->
+
+            <footer
+                class="bg-gradient-to-l from-blue-700/90 to-blue-500/90 shadow-gray-50 w-full"
             >
-          </div>
-          <div class="py-2 px-6 flex flex-col mt-4 shadow-xl bg-slate-50 rounded-lg">
-            <p class="my-1 font-bold text-lg sm:text-2xl">Rust</p>
-            <p class="py-2 text-md sm:text-lg">
-              My favorite low level language. I am loving the adoption of Rust on modern projects.
-            </p>
-          </div>
+                <div class="h-20 flex justify-center items-center">
+                    <p class="text-white text-xl">
+                        &copy; John William Davis &nbsp;&nbsp; 2025
+                    </p>
+                </div>
+            </footer>
+
+            <!-- container div ends on line below  -->
         </div>
-      </div>
-
-      <!-- education -->
-
-      <div class="text-indigo-900 px-4 max-w-6xl mx-auto py-4">
-        <div class="py-4 px-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> education </h3>
-        </div>
-        <div class="px-3">
-          <div class="my-2 px-4 text-lg sm:text-xl max-w-4xl border-b-4 border-indigo-100 pb-6">
-            <h2 class="font-bold"> General Assembly (GA) - Seattle </h2>
-            <p class="font-semibold"> Software Engineering Immersive (SEI) </p>
-            <p class="font-md">January 2020 - April 2020</p>
-            <p class="font-semibold italic">
-              An intensive, twelve-week, 400+ hour program focused on product development
-              fundamentals, object-oriented programming, MVC frameworks, data modeling and team
-              collaboration strategies
-            </p>
-          </div>
-          <div
-            class="mt-2 px-4 max-w-4xl text-lg sm:text-xl pt-8 border-b-4 border-indigo-100 pb-6"
-          >
-            <h2 class="font-bold">Green River Community College</h2>
-            <p class="font-md">May 1999 - August 2001</p>
-            <p class="font-semibold italic">
-              Documentary photography coursework. B&W film development and darkroom printing
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- projects begin here -->
-
-      <div class="pb-5 px-6 max-w-6xl mx-auto mt-1">
-        <div class="px-4 py-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> projects </h3>
-        </div>
-
-        <div class="px-3 my-6 text-indigo-900">
-          <div class="pb-6 border-b-4">
-            <h1 class="text-3xl font-bold">PAPA</h1>
-            <h2 class="text-2xl font-semibold italic">
-              A desktop journaling application for fathers
-            </h2>
-            <p class="text-xl font-md">JavaScript, Electron.js</p>
-            <a href="https://github.com/papadavis47/PAPA" target="_blank"
-              ><img
-                class="w-full md:w-3/4 rounded-lg my-4"
-                src="images/ScreenshotPapa.jpg"
-                alt="Image for PAPA app"
-            /></a>
-          </div>
-          <div class="mt-4 py-6 border-b-4">
-            <h1 class="text-3xl font-bold">coderCoachOrganizer</h1>
-            <h2 class="text-2xl font-semibold italic">
-              An organizational tool for programming mentors
-            </h2>
-            <p class="text-xl font-md"> JavaScript, Express.js, Postgres </p>
-            <a href="https://github.com/papadavis47/coder-coach-organizer" target="_blank"
-              ><img
-                class="w-full md:w-3/4 rounded-lg my-4"
-                src="images/ScreenshotCoderCoach.png"
-                alt="Image for coderCoachOrganizer"
-            /></a>
-          </div>
-          <div class="mt-4 py-6 border-b-4">
-            <h1 class="text-3xl font-bold">Linda's Math Game</h1>
-            <h2 class="text-2xl font-semibold italic">
-              This is a math game for second / third graders. Flash card system
-            </h2>
-            <p class="text-xl font-md">JavaScript, HTML5, CSS</p>
-            <a href="https://github.com/papadavis47/lindas-math-game" target="_blank"
-              ><img
-                class="w-full md:w-3/4 rounded-lg my-4"
-                src="images/ScreenshotLindasMathGame.png"
-                alt="Image for Linda's Math Game"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- more information about me -->
-      <!-- figured out how to use flex-auto here on these components -->
-      <div class="text-indigo-900 max-w-6xl mx-auto min-w-[360px] py-4 px-4">
-        <div class="py-4 px-6">
-          <h3 class="text-2xl sm:text-3xl font-black text-blue-500">
-            links to docs of my favorite tools
-          </h3>
-        </div>
-        <div class="px-3 flex max-w-4xl flex-wrap">
-          <div class="flex justify-center items-center m-2 shadow-md rounded-lg flex-auto">
-            <p
-              class="text-lg sm:text-xl px-6 py-6 text-center font-md bg-indigo-100 font-semibold w-full"
-            >
-              <a href="https://beta.reactjs.org/" target="_blank" rel="noreferrer">React.js</a>
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="font-semibold text-lg text-center w-full sm:text-xl px-6 py-6 font-md bg-indigo-100"
-            >
-              <a href="https://nextjs.org/docs/getting-started" target="_blank" rel="noreferrer"
-                >Next.js</a
-              >
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="font-semibold text-lg text-center sm:text-xl px-6 py-6 w-full font-md bg-indigo-100"
-            >
-              <a
-                href="https://www.prisma.io/docs/getting-started/quickstart"
-                target="_blank"
-                rel="noreferrer"
-                >Prisma</a
-              >
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
-            >
-              <a href="https://planetscale.com/docs" target="_blank" rel="noreferrer"
-                >PlanetScale</a
-              >
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="w-full text-center font-semibold text-lg sm:text-xl px-6 py-6 font-md bg-indigo-100"
-            >
-              <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer"
-                >TailwindCSS</a
-              >
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
-            >
-              <a href="https://styled-components.com/docs" target="_blank" rel="noreferrer"
-                >styled-components</a
-              >
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
-            >
-              <a href="https://alpinejs.dev/start-here" target="_blank" rel="noreferrer"
-                >Alpine.js</a
-              >
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md rounded-md flex-auto">
-            <p
-              class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
-            >
-              <a href="https://pop.system76.com/" target="_blank" rel="noreferrer">Pop_OS</a>
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md flex-auto">
-            <p
-              class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
-            >
-              <a href="https://www.vim.org/docs.php" target="_blank" rel="noreferrer">Vim</a>
-            </p>
-          </div>
-          <div class="flex justify-center items-center m-2 shadow-md flex-auto">
-            <p
-              class="font-semibold text-lg sm:text-xl px-6 py-6 text-center w-full font-md bg-indigo-100"
-            >
-              <a href="https://code.visualstudio.com/docs" target="_blank" rel="noreferrer"
-                >VS Code</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- things i do for fun -->
-
-      <div class="text-indigo-900 pb-5 px-6 max-w-6xl mx-auto my-10">
-        <div class="px-4 py-6">
-          <h3 class="text-xl sm:text-3xl font-black text-blue-500"> things that bring me joy </h3>
-        </div>
-        <div class="px-3 max-w-4xl">
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic"> Spending time with my family </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic"> Getting sun and exercise </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">
-            Reading - one of the simplest ways to a richer life
-          </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">
-            Netflix - World cinema at the click of a button
-          </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">
-            Water, mountains, desert - the natural world
-          </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">
-            Any challenge met and conquered
-          </p>
-
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic">
-            Sleeping in on weekend mornings
-          </p>
-          <p class="mt-2 text-lg sm:text-xl font-semibold italic"> Learning new things </p>
-        </div>
-      </div>
-
-      <!-- begin footer html -->
-
-      <footer class="bg-gradient-to-l from-blue-700/90 to-blue-500/90 shadow-gray-50 w-full">
-        <div class="h-20 flex justify-center items-center">
-          <p class="text-white text-xl"> &copy; John William Davis &nbsp;&nbsp; 2025 </p>
-        </div>
-      </footer>
-
-      <!-- container div ends on line below  -->
-    </div>
-  </body>
+    </body>
 </html>
