@@ -1,3 +1,6 @@
+/** Resolves a file in public/ against the configured Vite base. */
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export interface Social {
     label: string;
     href: string;
@@ -37,7 +40,7 @@ export const profile = {
     role: "Software Engineer",
     location: "Seattle, WA",
     email: "jwdavisdeveloper@gmail.com",
-    resume: "/johnwilliamdavis_resume.pdf",
+    resume: asset("johnwilliamdavis_resume.pdf"),
     source: "https://github.com/papadavis47/papadavis47.github.io/tree/2026-version",
 };
 
@@ -107,7 +110,7 @@ export const projects: Project[] = [
         tagline: "A desktop journaling application for fathers.",
         stack: ["JavaScript", "Electron.js"],
         href: "https://github.com/papadavis47/PAPA",
-        image: "/images/ScreenshotPapa.jpg",
+        image: asset("images/ScreenshotPapa.jpg"),
         alt: "Screenshot of the PAPA journaling app",
     },
     {
@@ -115,7 +118,7 @@ export const projects: Project[] = [
         tagline: "An organizational tool for programming mentors.",
         stack: ["JavaScript", "Express.js", "Postgres"],
         href: "https://github.com/papadavis47/coder-coach-organizer",
-        image: "/images/ScreenshotCoderCoach.png",
+        image: asset("images/ScreenshotCoderCoach.png"),
         alt: "Screenshot of coderCoachOrganizer",
     },
     {
@@ -123,7 +126,7 @@ export const projects: Project[] = [
         tagline: "A flash card math game for second and third graders.",
         stack: ["JavaScript", "HTML5", "CSS"],
         href: "https://github.com/papadavis47/lindas-math-game",
-        image: "/images/ScreenshotLindasMathGame.png",
+        image: asset("images/ScreenshotLindasMathGame.png"),
         alt: "Screenshot of Linda's Math Game",
     },
 ];
