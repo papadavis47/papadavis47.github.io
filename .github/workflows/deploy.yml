@@ -19,12 +19,14 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
+            # Uses the pnpm version pinned in package.json "packageManager".
+            - uses: pnpm/action-setup@v4
             - uses: actions/setup-node@v4
               with:
                   node-version: 22
-                  cache: npm
-            - run: npm ci
-            - run: npm run build
+                  cache: pnpm
+            - run: pnpm install --frozen-lockfile
+            - run: pnpm build
             - uses: actions/configure-pages@v5
             - uses: actions/upload-pages-artifact@v3
               with:
