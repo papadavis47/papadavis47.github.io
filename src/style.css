@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+/* Semantic color tokens, swapped wholesale in dark mode. */
+@theme inline {
+    --color-canvas: var(--canvas);
+    --color-surface: var(--surface);
+    --color-ink: var(--ink);
+    --color-muted: var(--muted);
+    --color-line: var(--line);
+    --color-accent: var(--accent);
+    --color-accent-soft: var(--accent-soft);
+}
+
+:root {
+    --canvas: #fafafa;
+    --surface: #ffffff;
+    --ink: #18181b;
+    --muted: #52525b;
+    --line: #e4e4e7;
+    --accent: #2563eb;
+    --accent-soft: #dbeafe;
+}
+
+.dark {
+    --canvas: #09090b;
+    --surface: #131316;
+    --ink: #f4f4f5;
+    --muted: #a1a1aa;
+    --line: #27272a;
+    --accent: #60a5fa;
+    --accent-soft: #172554;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+    }
+
+    body {
+        @apply bg-canvas text-ink font-sans antialiased;
+        transition: background-color 200ms ease, color 200ms ease;
+    }
+
+    ::selection {
+        @apply bg-accent text-canvas;
+    }
+
+    :focus-visible {
+        @apply outline-2 outline-offset-2 outline-accent;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Scroll-in reveal used by the v-reveal directive. */
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+        opacity 600ms ease,
+        transform 600ms ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
