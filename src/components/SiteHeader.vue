@@ -44,14 +44,17 @@ onBeforeUnmount(() => {
         >
             <a
                 href="#top"
-                class="group flex items-center gap-2.5 font-mono text-sm font-medium"
+                class="group flex items-end gap-2.5 font-mono text-sm font-medium"
             >
                 <span
-                    class="grid size-9 place-items-center rounded-lg bg-accent text-canvas transition-transform group-hover:-rotate-6"
+                    class="block size-9 rounded-lg bg-accent text-canvas transition-transform group-hover:-rotate-6"
                 >
-                    <AppIcon name="logo" class="size-6" />
+                    <AppIcon name="logo" class="size-9" />
                 </span>
-                <span>@{{ profile.handle }}</span>
+                <!-- Lifted slightly so the bottom of the descenders (the "p" tails) sits on the mark's bottom edge. -->
+                <span class="-translate-y-[0.035em] leading-none"
+                    >@{{ profile.handle }}</span
+                >
             </a>
 
             <nav aria-label="Sections" class="hidden md:block">

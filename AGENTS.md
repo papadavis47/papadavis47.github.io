@@ -33,7 +33,8 @@ any commit.
 ```
 index.html                  # <head> metadata, Open Graph tags, pre-paint theme script, #app mount
 public/                     # copied as-is to the site root
-  images/                   #   favicon, social preview image, icons
+  favicon.svg               #   "summit prompt" favicon; favicon.ico and apple-touch-icon.png are PNG renders of it
+  images/                   #   social preview image, icons
   images/projects/          #   project card images
   johnwilliamdavis_resume.pdf
 src/
@@ -88,6 +89,9 @@ with `v-for`.
 - Layout must work at phone width (about 390px) with no horizontal scrolling.
 - Respect `prefers-reduced-motion` (handled globally in `style.css`). Keep animation subtle.
 - Keep visible keyboard focus states and meaningful `alt` text / `aria-label`s.
+- The header mark (`logo` in `AppIcon.vue`) and `public/favicon.svg` share one 32x32 drawing.
+  If the mark changes, update both and regenerate `favicon.ico` (16/32/48px) and
+  `apple-touch-icon.png` (180px, square, no rounded corners) from the SVG.
 
 ## Deployment
 
