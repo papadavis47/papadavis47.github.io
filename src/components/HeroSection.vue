@@ -18,7 +18,7 @@ import { focus, profile, socials } from "../data/site";
             class="absolute -top-40 left-1/2 -z-10 h-[28rem] w-[56rem] -translate-x-1/2 rounded-full bg-accent/20 blur-3xl"
         />
 
-        <div class="mx-auto max-w-6xl px-4 pt-24 pb-14 sm:px-6 sm:pt-32 sm:pb-20">
+        <div class="mx-auto max-w-6xl px-4 pt-16.5 pb-14 sm:px-6 sm:pt-28 sm:pb-20">
             <p
                 v-reveal
                 class="inline-flex items-center gap-2 rounded-full border border-line bg-surface/70 px-3 py-1 font-mono text-xs text-muted"
@@ -29,7 +29,7 @@ import { focus, profile, socials } from "../data/site";
 
             <h1
                 v-reveal="80"
-                class="mt-6 text-5xl font-bold tracking-tight text-balance sm:text-7xl lg:text-8xl"
+                class="mt-6 text-[clamp(1.75rem,calc((100vw_-_2rem)/9.4),2.5rem)] leading-none font-bold tracking-tight whitespace-nowrap sm:text-[4rem] lg:text-[5.25rem]"
             >
                 {{ profile.name }}
             </h1>
