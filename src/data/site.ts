@@ -83,7 +83,7 @@ export const skills: Skill[] = [
     },
     {
         name: "Python",
-        blurb: "A clear, versatile language that I originally started my code writing journey with.",
+        blurb: "A clear, versatile language and the one I first learned to code with.",
         href: "https://docs.python.org/3/",
     },
     {
