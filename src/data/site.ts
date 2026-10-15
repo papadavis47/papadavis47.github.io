@@ -67,19 +67,14 @@ export const focus = ["Rust", "TypeScript", "Python"];
 
 export const skills: Skill[] = [
     {
+        name: "Rust",
+        blurb: "My favorite low level language. I am loving the adoption of Rust on modern projects.",
+        href: "https://www.rust-lang.org/",
+    },
+    {
         name: "TypeScript",
-        blurb: "This is the language I have the most experience with.",
+        blurb: "I started learning JavaScript in 2017 and have worked exclusively in TypeScript since about 2022. To me, it's the most practical programming language today.",
         href: "https://www.typescriptlang.org/",
-    },
-    {
-        name: "React",
-        blurb: "One of my favorite ways of building user interfaces.",
-        href: "https://react.dev/",
-    },
-    {
-        name: "Next.js",
-        blurb: "The React framework I have used for all my major projects.",
-        href: "https://nextjs.org/",
     },
     {
         name: "Python",
@@ -87,13 +82,23 @@ export const skills: Skill[] = [
         href: "https://docs.python.org/3/",
     },
     {
-        name: "Rust",
-        blurb: "My favorite low level language. I am loving the adoption of Rust on modern projects.",
-        href: "https://www.rust-lang.org/",
+        name: "React",
+        blurb: "One of my favorite ways of building user interfaces.",
+        href: "https://react.dev/",
+    },
+    {
+        name: "Vue",
+        blurb: "The framework this portfolio site is built with.",
+        href: "https://vuejs.org/guide/introduction.html",
+    },
+    {
+        name: "Next.js",
+        blurb: "The React framework I have used for all my major projects.",
+        href: "https://nextjs.org/",
     },
     {
         name: "PostgreSQL",
-        blurb: "Most of my SQL experience has been with this database. I have found that it translates perfectly well to other SQL flavors such as MySQL or SQLite.",
+        blurb: "Most of my SQL experience has been with this database.",
         href: "https://www.postgresql.org/",
     },
     {

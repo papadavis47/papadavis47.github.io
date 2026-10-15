@@ -29,7 +29,6 @@ import { education, joys, projects, skills, tools } from "./data/site";
                     v-for="(skill, i) in skills"
                     :key="skill.name"
                     v-reveal="(i % 3) * 60"
-                    :class="i === 0 ? 'lg:col-span-2' : ''"
                 >
                     <component
                         :is="skill.href ? 'a' : 'div'"
