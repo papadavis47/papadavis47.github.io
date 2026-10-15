@@ -18,7 +18,7 @@ import { focus, profile, socials } from "../data/site";
             class="absolute -top-40 left-1/2 -z-10 h-[28rem] w-[56rem] -translate-x-1/2 rounded-full bg-accent/20 blur-3xl"
         />
 
-        <div class="mx-auto max-w-6xl px-4 pt-24 pb-20 sm:px-6 sm:pt-32 sm:pb-28">
+        <div class="mx-auto max-w-6xl px-4 pt-24 pb-14 sm:px-6 sm:pt-32 sm:pb-20">
             <p
                 v-reveal
                 class="inline-flex items-center gap-2 rounded-full border border-line bg-surface/70 px-3 py-1 font-mono text-xs text-muted"

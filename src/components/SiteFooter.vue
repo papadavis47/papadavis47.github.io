@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
 
 <template>
     <footer class="border-t border-line/70">
-        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div class="mx-auto max-w-6xl px-4 py-11 sm:px-6">
             <div
                 v-reveal
                 class="flex flex-col gap-6 rounded-3xl border border-line bg-surface p-8 sm:flex-row sm:items-center sm:justify-between sm:p-10"

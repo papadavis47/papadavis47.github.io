@@ -11,7 +11,7 @@ defineProps<{
     <section
         :id="id"
         :aria-labelledby="`${id}-title`"
-        class="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24"
+        class="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-17"
     >
         <div v-reveal class="mb-10 max-w-2xl">
             <p class="font-mono text-sm text-accent">{{ index }}</p>
