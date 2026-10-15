@@ -81,7 +81,14 @@ import { education, joys, projects, skills, tools } from "./data/site";
                                 :src="project.image"
                                 :alt="project.alt"
                                 loading="lazy"
-                                class="size-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                                class="size-full transition-transform duration-500 group-hover:scale-105"
+                                :class="
+                                    project.imageKind === 'logo'
+                                        ? 'object-contain p-10'
+                                        : project.imageAnchor === 'left'
+                                          ? 'object-cover object-left-top'
+                                          : 'object-cover object-top'
+                                "
                             />
                         </div>
                         <div class="flex flex-1 flex-col p-6">

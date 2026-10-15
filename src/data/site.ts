@@ -20,6 +20,10 @@ export interface Project {
     href: string;
     image: string;
     alt: string;
+    /** "logo" centers a mark on a plain panel instead of filling it with a screenshot. */
+    imageKind?: "screenshot" | "logo";
+    /** Which edge of a cropped screenshot to keep in view. Defaults to the top center. */
+    imageAnchor?: "left";
 }
 
 export interface Education {
@@ -106,28 +110,33 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
     {
-        name: "PAPA",
-        tagline: "A desktop journaling application for fathers.",
-        stack: ["JavaScript", "Electron.js"],
-        href: "https://github.com/papadavis47/PAPA",
-        image: asset("images/ScreenshotPapa.jpg"),
-        alt: "Screenshot of the PAPA journaling app",
+        name: "Mountains",
+        tagline:
+            "A terminal training log for trail running. Tracks miles, elevation gain, nutrition, strength and mobility work, and daily notes. Works offline, with optional cloud sync.",
+        stack: ["Rust", "Ratatui", "libSQL", "Turso"],
+        href: "https://github.com/papadavis47/mountains",
+        image: asset("images/projects/mountains.png"),
+        alt: "Mountains start screen showing monthly and yearly elevation totals",
     },
     {
-        name: "coderCoachOrganizer",
-        tagline: "An organizational tool for programming mentors.",
-        stack: ["JavaScript", "Express.js", "Postgres"],
-        href: "https://github.com/papadavis47/coder-coach-organizer",
-        image: asset("images/ScreenshotCoderCoach.png"),
-        alt: "Screenshot of coderCoachOrganizer",
+        name: "Mija",
+        tagline:
+            "A full-screen terminal Pomodoro timer. The name is Spanish for \"my daughter\", whose visits remind me to take a break.",
+        stack: ["Rust", "Ratatui", "clap"],
+        href: "https://github.com/papadavis47/mija",
+        image: asset("images/projects/mija-logo.png"),
+        alt: "Mija logo: a pomodoro dial around an M",
+        imageKind: "logo",
     },
     {
-        name: "Linda's Math Game",
-        tagline: "A flash card math game for second and third graders.",
-        stack: ["JavaScript", "HTML5", "CSS"],
-        href: "https://github.com/papadavis47/lindas-math-game",
-        image: asset("images/ScreenshotLindasMathGame.png"),
-        alt: "Screenshot of Linda's Math Game",
+        name: "caleb",
+        tagline:
+            "A terminal task manager for coding sessions. Each session is saved as a plain Markdown file. Named for a character in Ex Machina.",
+        stack: ["Rust", "Ratatui", "jiff"],
+        href: "https://github.com/papadavis47/caleb",
+        image: asset("images/projects/caleb.png"),
+        alt: "caleb session screen with Active and Completed task panes",
+        imageAnchor: "left",
     },
 ];
 
