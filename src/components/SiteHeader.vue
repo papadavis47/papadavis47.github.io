@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { onBeforeUnmount, onMounted, ref } from "vue";
 import AppIcon from "./AppIcon.vue";
+import MobileMenu from "./MobileMenu.vue";
 import { profile, sections } from "../data/site";
 import { useTheme } from "../composables/useTheme";
 import { useActiveSection } from "../composables/useActiveSection";
@@ -8,6 +9,30 @@ import { useActiveSection } from "../composables/useActiveSection";
 const { theme, toggle } = useTheme();
 const active = useActiveSection(sections.map((s) => s.id));
 const menuOpen = ref(false);
+const menuButton = ref<HTMLButtonElement | null>(null);
+
+// Unlock scrolling synchronously so a tapped section link can scroll the page.
+function setMenuOpen(open: boolean) {
+    menuOpen.value = open;
+    document.documentElement.style.overflow = open ? "hidden" : "";
+}
+
+function closeMenu(restoreFocus: boolean) {
+    if (!menuOpen.value) return;
+    setMenuOpen(false);
+    if (restoreFocus) menuButton.value?.focus({ preventScroll: true });
+}
+
+// The menu only exists below the md breakpoint; close it if the window widens.
+const desktop = window.matchMedia("(min-width: 48rem)");
+const onBreakpoint = (event: MediaQueryListEvent) => {
+    if (event.matches) closeMenu(false);
+};
+onMounted(() => desktop.addEventListener("change", onBreakpoint));
+onBeforeUnmount(() => {
+    desktop.removeEventListener("change", onBreakpoint);
+    setMenuOpen(false);
+});
 </script>
 
 <template>
@@ -69,42 +94,28 @@ const menuOpen = ref(false);
                     />
                 </button>
                 <button
+                    ref="menuButton"
                     type="button"
-                    class="grid size-9 place-items-center rounded-full border border-line text-muted transition-colors hover:text-ink md:hidden"
+                    class="grid size-9 place-items-center rounded-full border transition-colors hover:text-ink md:hidden"
+                    :class="
+                        menuOpen
+                            ? 'border-accent bg-accent-soft text-ink'
+                            : 'border-line text-muted'
+                    "
                     :aria-expanded="menuOpen"
                     aria-controls="mobile-menu"
                     :aria-label="menuOpen ? 'Close menu' : 'Open menu'"
-                    @click="menuOpen = !menuOpen"
+                    @click="menuOpen ? closeMenu(true) : setMenuOpen(true)"
                 >
                     <AppIcon :name="menuOpen ? 'close' : 'menu'" class="size-4" />
                 </button>
             </div>
         </div>
 
-        <nav
-            v-show="menuOpen"
-            id="mobile-menu"
-            aria-label="Sections"
-            class="border-t border-line/70 px-4 pb-4 md:hidden"
-        >
-            <ul class="flex flex-col pt-2">
-                <li v-for="section in sections" :key="section.id">
-                    <a
-                        :href="`#${section.id}`"
-                        class="block rounded-lg px-3 py-2.5 text-muted hover:bg-surface hover:text-ink"
-                        @click="menuOpen = false"
-                        >{{ section.label }}</a
-                    >
-                </li>
-                <li>
-                    <a
-                        :href="profile.resume"
-                        target="_blank"
-                        class="block rounded-lg px-3 py-2.5 text-muted hover:bg-surface hover:text-ink"
-                        >Resume</a
-                    >
-                </li>
-            </ul>
-        </nav>
+        <MobileMenu
+            :open="menuOpen"
+            :active="active"
+            @close="closeMenu"
+        />
     </header>
 </template>

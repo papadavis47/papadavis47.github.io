@@ -42,7 +42,8 @@ src/
   App.vue                   # page layout and the Skills/Projects/Education/Tools/Joy sections
   data/site.ts              # ALL site content: profile, socials, skills, projects, education, tools, joys
   components/
-    SiteHeader.vue          # sticky header, section nav with active highlight, theme toggle, mobile menu
+    SiteHeader.vue          # sticky header, section nav with active highlight, theme toggle, menu button
+    MobileMenu.vue          # floating mobile menu panel (teleported to <body>, overlay, focus trap)
     HeroSection.vue         # name, role, intro sentence, call-to-action buttons, social links
     PageSection.vue         # shared section wrapper (index label, heading, optional lede)
     SiteFooter.vue          # contact card, copyright year, social links
