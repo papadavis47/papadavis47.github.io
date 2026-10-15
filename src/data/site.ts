@@ -151,7 +151,7 @@ export const education: Education[] = [
         program: "Software Engineering Immersive (SEI)",
         dates: "January 2020 – April 2020",
         summary:
-            "An intensive, twelve-week, 400+ hour program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling and team collaboration strategies.",
+            "An intensive, twelve-week, 400+ hour bootcamp program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling and team collaboration strategies.",
     },
     {
         school: "Green River Community College",

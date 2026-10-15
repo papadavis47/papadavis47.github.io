@@ -51,8 +51,8 @@ onBeforeUnmount(() => {
                 >
                     <AppIcon name="logo" class="size-9" />
                 </span>
-                <!-- Lifted slightly so the bottom of the descenders (the "p" tails) sits on the mark's bottom edge. -->
-                <span class="-translate-y-[0.035em] leading-none"
+                <!-- Lifted so the handle reads as sitting level with the mark's bottom edge. -->
+                <span class="-translate-y-[2.5px] leading-none"
                     >@{{ profile.handle }}</span
                 >
             </a>
