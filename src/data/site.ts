@@ -63,7 +63,7 @@ export const socials: Social[] = [
     { label: "Email", href: `mailto:${profile.email}`, icon: "mail" },
 ];
 
-export const focus = ["TypeScript", "Go", "Rust"];
+export const focus = ["Rust", "TypeScript", "Python"];
 
 export const skills: Skill[] = [
     {
@@ -82,9 +82,9 @@ export const skills: Skill[] = [
         href: "https://nextjs.org/",
     },
     {
-        name: "Go",
-        blurb: "One of my favorite languages with great ergonomics.",
-        href: "https://go.dev/",
+        name: "Python",
+        blurb: "A clear, versatile language that is now part of my core focus.",
+        href: "https://docs.python.org/3/",
     },
     {
         name: "Rust",
