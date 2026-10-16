@@ -52,7 +52,7 @@ onBeforeUnmount(() => {
                     <AppIcon name="logo" class="size-9" />
                 </span>
                 <!-- Lifted so the handle reads as sitting level with the mark's bottom edge. -->
-                <span class="-translate-y-[2.5px] leading-none"
+                <span class="translate-y-[-2.5px] leading-none"
                     >@{{ profile.handle }}</span
                 >
             </a>
