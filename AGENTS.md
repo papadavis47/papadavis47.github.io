@@ -34,7 +34,7 @@ any commit.
 index.html                  # <head> metadata, Open Graph tags, pre-paint theme script, #app mount
 public/                     # copied as-is to the site root
   favicon.svg               #   "summit prompt" favicon; favicon.ico and apple-touch-icon.png are PNG renders of it
-  images/                   #   social preview image, icons
+  images/                   #   social preview image (profile.jpg)
   images/projects/          #   project card images
   johnwilliamdavis_resume.pdf
 src/
